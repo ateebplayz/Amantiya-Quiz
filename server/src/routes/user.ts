@@ -43,9 +43,6 @@ router.post('/create', async (req,res) => {
     if(!data.email) {
         return res.json({data: 'No Email Provided', code: 400})
     }
-    if(!data.number) {
-        return res.json({data: 'No Phone Number Provided', code: 400})
-    }
     if(!data.energyLevel.energielevel || isNaN(Number(data.energyLevel.energielevel))) {
         return res.json({data: 'No Energy Level Provided', code: 400})
     }

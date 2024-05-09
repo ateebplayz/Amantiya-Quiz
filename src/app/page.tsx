@@ -5,6 +5,7 @@ import { Result, getResults } from '@/assets/calculation';
 import { Question } from '@/assets/calculation';
 import Mock from '../assets/mock.jpg';
 import axios from 'axios'
+import { useRouter } from 'next/navigation';
 
 function sleep(ms: number) {
   return new Promise(r=>setTimeout(r, ms))
@@ -431,6 +432,7 @@ export default function Home() {
       category: 'Peil activerende energie'
     },
   ])
+  const router = useRouter()
   const [submitted, setSubmitted] = React.useState(false)
   const questionLen = [1,2,3,4,5,6,7,8,9,10]
   const [question, setQuestion] = React.useState(0)
@@ -465,6 +467,7 @@ export default function Home() {
     })
     await sleep(2000)
     setSubmitted(false)
+    window.location.reload()
   }
   const handleFinalClick = () => {
     const resultsLocal = getResults(questions)
@@ -472,9 +475,9 @@ export default function Home() {
   }
   const [page, setPage] = React.useState<'Home' | 'How' | 'Quiz'>('Home')
   return (
-    <div className="bg-primary flex flex-col w-full min-h-screen font-primary">
+    <div className="bg-primary flex flex-col justify-center items-center w-full min-h-screen font-primary">
       <div className={`transition duration-500 flex justify-center items-center p-4 bg-primary z-50 w-fit self-center fixed border-[1px] border-buttonBorder rounded-full top-5 ${submitted ? 'opacity-100' : 'opacity-0'}`}>
-        <p>Your results have been E-mailed to {email}</p>
+        <p>De resultaten van de test zijn verstuurd naar...</p>
       </div>
       <div className="w-full h-[72px] relative border-b-buttonBorder border-b-[1px] bg-F3EEE7 flex justify-between items-center px-24 lg:px-4 py-8">
         <img src={Logo.src} className='h-[72px]'/>
@@ -482,11 +485,11 @@ export default function Home() {
           Go Back
         </button>
       </div>
-      <div className='flex flex-col px-24 lg:px-8'>
+      <div className='min-h-screen flex flex-col px-24 justify-center items-center mt-4 lg:px-8'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='min-h-screen flex-col flex justify-center items-center w-full border-8 border-white'>
+        <div className='flex-col flex justify-center items-center w-full border-[32px]  border-white'>
           <div className='p-8 flex justify-center items-center flex-col'>
-            <button className='mt-4 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] px-6 py-2 text-xl'>
+            <button className='mt-4 w-32 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] px-6 py-2 text-xl'>
               {question + 1}/{questions.length}
             </button>
             <h1 className='text-3xl mt-4 text-center'>{questions[question].question}</h1>
@@ -520,7 +523,7 @@ export default function Home() {
           </div>
         </div>
         : page == 'Quiz' ?   
-        <div className='min-h-screen flex-col flex justify-center items-center w-full border-8 border-white'>
+        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[32px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
             {result.type == 'De Overload Burnout' ? 
             <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een <span className='text-blue-500'>Overload Burn out</span> hebt.</h1>
@@ -528,20 +531,20 @@ export default function Home() {
             <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je geen burn out hebt.</h1>
             }
             {result.type == 'De Overload Burnout' ?
-            <p className={`text-red-500 text-lg  text-start`}>Deze Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. Kenmerken: oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust. Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer degene met een normale burn out voldoende rust krijgt, gaat het hem/haar al zichtbaar beter. Behandeling van deze burn out bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.</p>
+            <p className={`text-xl text-start`}>Deze Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. Kenmerken: oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust. Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer degene met een normale burn out voldoende rust krijgt, gaat het hem/haar al zichtbaar beter. Behandeling van deze burn out bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.</p>
             :
-            <p className={`text-start text-lg`}>Je totale energiebeeld geeft aan dat je geen Burn out hebt. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”. Klik hier voor meer info.</p>
+            <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen Burn out hebt. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”. Klik hier voor meer info.</p>
             }
             <h1 className={`text-lg text-start mt-6 font-primary`}>Uit de test kunnen wij nog meer informatie over je level van energie en over jouw specifieke kenmerken halen. Wil je dit ontvangen dan laten we dit samenstellen en sturen we het per email gratis naar je toe.</h1>
             <div className='flex justify-start w-full items-start flex-col'>
               <input onChange={(e)=>{setName(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Naam'/>
               <input onChange={(e)=>{setEmail(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Email'/>
-              <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-black font-bold focus:font-normal focus:outline-none w-96' placeholder='Telefoon'/>
+              <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Telefoon'/>
               <label className="inline-flex items-center mt-4">
                 <input type="checkbox" checked={checked} onChange={()=>{setChecked(!checked)}} className="checkbox-rounded" />
                 <span className="ml-2 text-md">Vink aan, en wij nemen contact met u op voor het plannen van een gratis intake </span> 
               </label>
-              <button onClick={handleSubmit} className={`mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 ${!checked || name.length < 2 || email.length < 3 || !email.includes('@') || !email.includes('.') || telephone.length < 2 ? 'opacity-50 curser-not-allowed pointer-events-none' : ''}`}>
+              <button onClick={handleSubmit} className={`mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 ${name.length < 2 || email.length < 3 || !email.includes('@') || !email.includes('.') ? 'opacity-50 curser-not-allowed pointer-events-none' : ''}`}>
                 Verstuur
               </button>
               <h1 className='text-xl mt-4'><span className='font-bold'>Let op </span>deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</h1>
@@ -549,11 +552,11 @@ export default function Home() {
           </div>
         </div> : ''}
         {page == 'Home' ? 
-        <div className='min-h-screen flex-row flex justify-center items-center w-full border-8 border-white'>
-          <div className='flex justify-end w-5/12 lg:hidden items-end flex-col'>
-            <img src={Mock.src} className='w-[300px] rounded h-auto mr-12' alt='Mockup Image'/>
+        <div className='flex-row flex justify-center p-2 items-center w-10/12 lg:w-full border-[32px] border-white p-0'>
+          <div className='flex justify-end w-[300px] lg:hidden items-end flex-col'>
+            <img src={Mock.src} className='w-full rounded h-auto mr-12' alt='Mockup Image'/>
           </div>
-          <div className='flex justify-start w-7/12 lg:w-full items-start flex-col'>
+          <div className='flex justify-start w-5/12 lg:w-full items-start flex-col'>
             <h1 className='text-5xl w-full text-start'>Burn-out Test</h1>
             <h1 className='text-xl w-full text-start lgo:pr-32'>Doe de test en zle wat wllje kunng0 ke tellen over jouw situatie. Je krijgt van ous direct Antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
@@ -568,7 +571,7 @@ export default function Home() {
           </div>
         </div> : page == 'How' ? 
         
-        <div className='min-h-screen flex-col flex justify-center items-center lg:items-start w-full border-8 border-white'>
+        <div className='min-h-screen flex-col flex justify-center items-center lg:items-start w-full border-[32px] p-4 border-white'>
           <h1 className='text-5xl font-bold lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>
           <h1 className='text-xl mt-2 text-center w-7/12 lg:w-full lg:text-start'>Antwoordmogelijkheden zijn telkens cijfers tussen 1 en 10, Cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie. <br/>Test en gradeer iedere bewering met je gevoel en het eerste cijfer wat binnenvalt alt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring. <br/>De test neemt ongeveer 10 minuten in beslag. <br/>Wordt nooit ongerust van wat voor test dan ook. De test is er om een diagnose te maken en te kijken wat we kunnen doen om je score gezond hoog te krijgen. <br/>ledere uitslag is dus een goede uitslag, veel success.</h1>
           <button onClick={()=>{setPage('Quiz')}} className='mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
