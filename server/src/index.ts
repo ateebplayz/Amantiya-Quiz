@@ -12,8 +12,8 @@ app.use(express.json())
 app.use('/users', UserRoute)
 app.use('/admin', AdminRoute)
 
-app.listen(8080, ()=>{
-    console.log('App listening on Port 8080')
+app.listen(8000, ()=>{
+    console.log('App listening on Port 8000')
 })
 
 mongoClient.connect().then(()=>{

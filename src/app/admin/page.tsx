@@ -29,7 +29,7 @@ function AdminPage() {
     })
     const [average, setAverage] = React.useState<EnergyLevels>({energielevel: 0, activerende: 0, blokkade: 0, focus: 0, hyper: 0, energiereserves: 0})
     const fetchDocs = async () => {
-        const resp = await axios.get(`http://localhost:8080/users/get?token=${localStorage.getItem('token')}`)
+        const resp = await axios.get(`https://api.amantiya.com:8080/users/get?token=${localStorage.getItem('token')}`)
         if(resp.data.code !== 200) return router.push('/admin/login')
         setDocuments(resp.data.data.data)
         setAverage(resp.data.data.average)
