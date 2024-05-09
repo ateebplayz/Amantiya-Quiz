@@ -1,6 +1,8 @@
 import { mongoClient } from "./modules/mongo";
 import express from 'express'
 import cors from 'cors'
+import https from 'https'
+import fs from 'fs'
 
 import UserRoute from './routes/user'
 import AdminRoute from './routes/admin'
@@ -12,7 +14,14 @@ app.use(express.json())
 app.use('/users', UserRoute)
 app.use('/admin', AdminRoute)
 
-app.listen(8000, ()=>{
+const options = {
+  key: fs.readFileSync('SSL/private.key'),
+  cert: fs.readFileSync('SSL/certificate.crt')
+}
+
+const server = https.createServer(options, app)
+
+server.listen(8000, ()=>{
     console.log('App listening on Port 8000')
 })
 
