@@ -36,7 +36,7 @@ function energyLevel(questions: Question[]): EnergyLevels {
     let activeEnergyQuestions = questions.filter(q=>q.category=='Peil activerende energie')
     activeEnergyQuestions.sort((a,b)=>a.answer-b.answer)
     let activeEnergyQuestionsLowFour = activeEnergyQuestions.slice(0,4)
-    activeEnergyQuestionsLowFour.forEach(q=>activeEnergyLevel+=q.answer)
+    activeEnergyQuestionsLowFour.forEach(q=>{activeEnergyLevel+=q.answer; console.log(`active energy level ${q.answer}`)})
     activeEnergyLevel = activeEnergyLevel/8
     activeEnergyLevel = Number(activeEnergyLevel.toFixed(1))
     

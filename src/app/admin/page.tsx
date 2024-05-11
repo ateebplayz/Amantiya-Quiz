@@ -29,7 +29,7 @@ function AdminPage() {
     })
     const [average, setAverage] = React.useState<EnergyLevels>({energielevel: 0, activerende: 0, blokkade: 0, focus: 0, hyper: 0, energiereserves: 0})
     const fetchDocs = async () => {
-        const resp = await axios.get(`https://api.amantiya.com:8080/users/get?token=${localStorage.getItem('token')}`)
+        const resp = await axios.get(`http://localhost:8080/users/get?token=${localStorage.getItem('token')}`)
         if(resp.data.code !== 200) return router.push('/admin/login')
         setDocuments(resp.data.data.data)
         setAverage(resp.data.data.average)
@@ -39,6 +39,18 @@ function AdminPage() {
     })
     const handleModalPop = () => {
         (document.getElementById('modal_popup_results') as HTMLDialogElement).showModal();
+    }
+    const getResults = (energyLevels: { energielevel: number; focus: number; hyper: number; energiereserves: number; blokkade: number }) => {
+        let type = ``
+        if(energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) type = 'De Overload Burnout'
+        if(energyLevels.energielevel <= 2.2 && energyLevels.focus >= 1.5) type = 'De Chaotic Burnout'
+        if(energyLevels.energielevel <= 2.2 && energyLevels.hyper >= 1.5) type = 'De Hypersensitive Burnout'
+        if(energyLevels.energielevel <= 1.5 && energyLevels.energiereserves <= 1.5) type = 'De Rockbottom Burnout'
+        if(energyLevels.energielevel <= 1.5 && energyLevels.blokkade <= 1.0) type = 'De Burnout Shutdown'
+        return type
+    }
+    const deleteDoc = async (docEmail: string) => {
+      await axios.get(`http://localhost:8080/users/delete?token=${localStorage.getItem('token')}&email=${docEmail}`)
     }
   return (
     <div className='bg-primary font-primary flex min-h-screen p-12 justify-center flex-col items-center'>
@@ -94,7 +106,7 @@ function AdminPage() {
                         <button onClick={()=>{setLocalDoc(d); handleModalPop()}} className={`mt-4 w-64 border-[1px] border-buttonBorder transition mx-4 duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 `}>
                             Results
                         </button>
-                        <button className={`mt-4 w-64 border-[1px] border-buttonBorder transition mx-4 duration-500 hover:bg-buttonBgHover bg-red-400 text-white text-text rounded-[1px] px-10 py-2 `}>
+                        <button onClick={async ()=>{await deleteDoc(d.email)}} className={`mt-4 w-64 border-[1px] border-buttonBorder transition mx-4 duration-500 hover:bg-buttonBgHover bg-red-400 text-white text-text rounded-[1px] px-10 py-2 `}>
                             Delete
                         </button>
                     </div>
@@ -104,7 +116,7 @@ function AdminPage() {
         <dialog id='modal_popup_results'>
             <div className='w-96 bg-primary rounded p-8'>
                 <h1 className='font-bold text-xl ml-2'>Results for {localDoc.name}</h1>
-                <h1 className='text-lg ml-2 '>{localDoc.email}</h1>
+                <h1 className='text-lg ml-2 '>{getResults(localDoc.energyLevel)}</h1>
                 <div className='flex justify-start mt-4 items-start flex-row flex-wrap'>
                     <div className='flex justify-center items-center flex-col mx-2'>
                         <h1 className='text-xl font-bold'>Energie leven</h1>

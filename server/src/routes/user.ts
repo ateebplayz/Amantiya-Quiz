@@ -75,25 +75,25 @@ router.post('/create', async (req,res) => {
     if(Number(data.energyLevel.energielevel) <= 2.1 && Number(data.energyLevel.energielevel) >= 1.6) text += 'Je totale energiebeeld geeft aan dat je een tweedegraads Burn-out hebt. Het is goed om een afspraak te maken voor je herstel bij ons in Thailand. Dit moet aangepakt worden omdat je energieniveau, je levensritme, je omgevingsfactoren en je andere klachten er samen voor zorgen dat je in een vicieuze cirkel komt of al bent gekomen. Je zult dit gedegen op meerdere fronten met een centrale draad voor jou moeten oplossen. We gaan je hierbij helpen en kunnen je weer je gezonde eigen ik terugbrengen  ' 
     if(Number(data.energyLevel.energielevel) <= 1.5) text += 'Je totale energiebeeld geeft aan dat je een derdegraads Burn-out hebt. Je energieniveau is op een gevaarlijk laag level. Het is belangrijk om zo snel mogelijk actie hierin te ondernemen en een afspraak bij ons in Thailand te maken. We gaan zorgen voor je rustritme, je levensritme, de opruiming van belastende zaken. Daarna kunnen we samen werken aan je opbouw en deze langzaam maar gestaag volgens een sterk plan inzetten. Een centrale lijn hierin, waarin iedereen weet wat er gebeuren moet en volgens hetzelfde plan kan werken, is essentieel.'
 
-    text += '<br/><b>Activerende Energi: e</b>'
+    text += '<br/><br/><b>Activerende Energie: </b>'
     if(Number(data.energyLevel.activerende) <= 2.2 && Number(data.energyLevel.activerende) >= 1.6) text += 'Er is een duidelijk tekort aan de energie die voor je activerende functies zorgt. Dit is dus de energie waarmee je iets doet, een karwei, maar ook intern voedsel omzetten, bloedsomloop en de opruiming van afvalstoffen. Het is echter nog niet zodanig dat dit een peil bereikt dat dit op de rest van je systeem een verder afbrekend effect heeft. Het herstellen van je activerende energie is wel een serieus aandachtspunt.'
     if(Number(data.energyLevel.activerende) <= 1.5) text += 'Het niveau van je activerende energie is veel te laag. Dit is de energie waarmee je iets doet, een karwei, maar ook intern voedsel omzetten, transport en schoonmaak. Dit zorgt ervoor dat je totale energie zich onvoldoende kan opbouwen, herstellen en verschonen. Het houdt het algehele niveau van je energie in een vicieuze cirkel of brengt het zelfs in een neerwaartse spiraal.'
 
-    text += '<br/><b>Energiereserve: </b>'
+    text += '<br/><br/><b>Energiereserve: </b>'
     if(Number(data.energyLevel.energiereserves) <= 2.5 && Number(data.energyLevel.energiereserves) >= 1.6) text += 'Je symptomen laten zien dat je je lichaamsreserves aan het verbruiken bent zonder ze voldoende op te bouwen. Dit zijn de reserves aan bouwstoffen, afweerstoffen, transportmiddelen en energieopslag. Je kunt nog wel een bepaalde balans hierin behouden, maar wanneer je energie verder af zal nemen, zullen ook je reserves verdwijnen en zal er op dit gebied een vicieuze cirkel of zelfs negatieve spiraal ontstaan.'
     if(Number(data.energyLevel.energiereserves) <= 1.5) text += 'Je lichaamsreserves zijn zover verminderd dat ze de normale circulatie van je energie verstoren. Dit zijn de reserves aan bouwstoffen, afweerstoffen, transportmiddelen en energieopslag. Door te weinig lichamelijke reserves, brand je op van binnen en komen je organen en/of je geest te weinig tot rust. Hierdoor worden de reserves niet aangevuld en een negatieve spiraal ontstaat. Deze zal snel omgekeerd moet worden zodat je systeem niet verder achteruitgaat met als eindresultaat een complete ineenstorting.'
     
-    text += '<br/><b>Blokerings niveau: </b>'
+    text += '<br/><br/><b>Blokerings niveau: </b>'
     if(Number(data.energyLevel.blokkade) <= 2.5 && Number(data.energyLevel.blokkade) >= 1.7) text += 'Je bent iemand die snel alles wat om je heen gebeurt in je opneemt. Daarmee blokkeer je op lichamelijke en geestelijke stressmomenten.'
     if(Number(data.energyLevel.blokkade) <= 1.6 && Number(data.energyLevel.blokkade) >= 1.1) text += 'Je manier waarop je dingen omgaat zorgt ervoor dat lichamelijk en emotioneel blokkeert. Ook al voel je dat niet altijd, sla je de dingen die om je heen gebeuren op en loop je daarop vast; Op je spieren, je bindweefsel, je organen en/of je bloedvoorziening.'
     if(Number(data.energyLevel.blokkade) <= 1.0) text += 'De stress in je leven, de manier van omgaan en je ritme zorgen ervoor dat je veel te veel blokkeert in je lijf. Processen in de spieren, in de zuivering van je lichaam, in je organen en in je bloedsomloop verlopen niet zoals het hoort.'
     
-    text += '<br/><b>Hypersensiviteit niveau: </b>'
+    text += '<br/><br/><b>Hypersensiviteit niveau: </b>'
     if(Number(data.energyLevel.hyper) <= 2.2 && Number(data.energyLevel.hyper) >= 1.6) text += 'Je gevoeligheid is hoger dan bij de gemiddelde mens. Je reageert daarom meer op de prikkels om je heen. Dit kost je energie. Je kunt deze verloren energie wel een rustige omgeving terugkrijgen.'
     if(Number(data.energyLevel.hyper) <= 1.5 && Number(data.energyLevel.hyper) >= 1.1) text += 'Je bent eigenlijk constant overprikkeld. Dit gaat ten koste van je energieopbouw en je energiezuivering. De overprikkeling wegnemen lukt je niet in de maatschappij waarin je leeft. Beter is het om je energielevel en daarmee je tolerantie te verhogen.'
     if(Number(data.energyLevel.hyper) <= 1.0) text += 'Je overprikkeling is op het hoogste niveau. Je energielevel en de mate van de overprikkeling houden elkaar in een zeer negatieve stand. Je gaat je terugtrekken en afzonderen waardoor de situatie alleen verslechtert. Je energie laat het echter niet toe om de ommekeer te maken. Dit moet vanuit het totale energielevel aangepakt worden.'
 
-    text += '<br/><b>Focus niveau: </b>'
+    text += '<br/><br/><b>Focus niveau: </b>'
     if(Number(data.energyLevel.focus) <= 2.4 && Number(data.energyLevel.focus) >= 1.6) text += 'Jezelf organiseren en je ergens op focussen is minder dan normaal. Dit hoeft nog geen problemen op te leveren, maar het is wel een aandachtspunt wat je zou kunnen aanpakken en trainen zodat er geen energie meer hierdoor verloren gaat.'
     if(Number(data.energyLevel.focus) <= 1.5 && Number(data.energyLevel.focus) >= 1.1) text += 'Je algehele niveau van focus is beneden peil. Er zijn zeker zaken in je leven die dit negatief beïnvloeden. Het schaadt je energie. Je levensritme en je rust en je energieniveau moeten verbeteren om dit aan te pakken.'
     if(Number(data.energyLevel.focus) <= 1.0) text += 'Je gebrek aan focus beïnvloedt het level van je energie en vice versa. De chaos in je hoofd en in je leven zorgen voor verder energieverlies. Alleen leren focussen of je geest tot rust brengen is niet genoeg. Er zullen zowel op lichamelijk, energetisch als geestelijk gebied verbeteringen ingezet moeten worden'
@@ -161,6 +161,21 @@ router.get('/get', async (req,res) => {
     return res.json({data: {
         data: docs,
         average: avg
+    }, code: 200})
+})
+
+router.get('/delete', async (req,res) => {
+    const token = req.query.token as string
+    const docEmail = req.query.email as string
+    if(token) {
+        const verificationToken = await verifyToken(token)
+        if (verificationToken.code !== 200) {
+            return res.json(verificationToken)
+        }
+    } else return res.json({data: 'Token Not Found', code: 404})
+    userCollection.deleteOne({email: docEmail})
+    return res.json({data: {
+        data: 'Success'
     }, code: 200})
 })
 export default router

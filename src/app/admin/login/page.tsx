@@ -11,7 +11,7 @@ function LoginPage() {
     const [code, setCode] = React.useState('')
     const [shake, setShake] = React.useState(false)
     const handleSubmit = async () => {
-        const resp = await axios.get(`https://api.amantiya.com:8080/admin/authenticate?username=${username}&password=${password}&code=${code}`)
+        const resp = await axios.get(`http://localhost:8080/admin/authenticate?username=${username}&password=${password}&code=${code}`)
         if(resp.data.code !== 200) {
             console.log(resp.data)
             setShake(true)
