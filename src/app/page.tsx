@@ -460,7 +460,7 @@ export default function Home() {
         energiereserves: `${result.energyLevel.energiereserves}`
       }
     }
-    await axios.post('http://localhost:8080/users/create', postData, {
+    await axios.post('https://api.amantiya.com:8080/users/create', postData, {
       headers: {
         'Content-Type': 'application/json'
       }
