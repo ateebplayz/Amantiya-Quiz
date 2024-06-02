@@ -473,15 +473,38 @@ export default function Home() {
   const [page, setPage] = React.useState<'Home' | 'How' | 'Quiz'>('Home')
   return (
     <div className="bg-primary flex flex-col justify-center items-center w-full min-h-screen font-primary">
-      <div className="w-full h-[72px] relative border-b-buttonBorder border-b-[1px] bg-F3EEE7 flex justify-between items-center px-24 lg:px-4 py-8">
-        <img src={Logo.src} className='h-[72px]'/>
-        <button onClick={()=>{window.open('https://amantiya.com/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
-          Terug
-        </button>
+      <div className="w-full relative bg-F3EEE7 pt-4 flex justify-between items-center flex-col px-12 lg:px-4 shadow-md">
+        {/*
+          <img src={Logo.src} className='h-[72px]'/>
+          <button onClick={()=>{window.open('https://amantiya.com/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
+            Terug
+          </button>
+        */}
+        <div className='grid grid-cols-3 gap-4 w-full'>
+          <div className=''/>  
+          <div className='flex justify-center items-center'>
+            <img src={Logo.src} className='h-[85px]'/>
+          </div>
+          <div className='flex justify-end items-center'>
+            <button onClick={()=>{window.open('https://amantiya.com/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 w-48'>
+              Terug
+            </button>
+          </div>
+        </div>
+        <div className='flex flex-row mt-4 justify-center items-center w-full'>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/")}}>AMANTIYA &gt;</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/methode/")}}>Methode</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/programma/")}}>Programma</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/ons-resort/")}}>Ons Resort</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/over-ons/")}}>Over ons</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/faq/")}}>Faq</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/blog/")}}>Blog</h1>
+          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/contact/")}}>Contact</h1>
+        </div>
       </div>
-      <div className='min-h-screen flex flex-col px-24 justify-center items-center mt-4 lg:px-8'>
+      <div className='min-h-screen flex flex-col px-24 justify-center items-center lg:px-8'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='flex-col flex justify-center items-center w-full border-[20px]  border-white'>
+        <div className='flex-col flex justify-center items-center w-full border-[14px] border-white'>
           <div className='p-8 flex justify-center items-center flex-col'>
             <button className='mt-4 w-24 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] px-6 py-2 text-lg'>
               {question + 1}/{questions.length}
@@ -518,13 +541,13 @@ export default function Home() {
         </div>
         : page == 'Quiz' ?   
         submitted ?
-        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[20px] border-white'>
+        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[14px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
             <h1 className='text-4xl text-center'>Dank jewel voor het invullen van de test.</h1>
             <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
           </div>
         </div>
-        : <div className='min-h-screen flex-col flex justify-center items-center w-full border-[20px] border-white'>
+        : <div className='min-h-screen flex-col flex justify-center items-center w-full border-[14px] border-white'>
         <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
           {result.type == 'De Overload Burnout' ? 
           <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een <span className='text-blue-500'>Overload Burn out</span> hebt.</h1>
@@ -553,26 +576,26 @@ export default function Home() {
         </div>
       </div> : ''}
         {page == 'Home' ?
-        <div className='flex-row flex justify-center p-2 items-center w-10/12 lg:w-full border-[20px] border-white p-0'>
+        <div className='flex-row flex justify-center p-2 items-center w-10/12 lg:w-full border-[14px] border-white p-0'>
           <div className='flex justify-end w-[300px] lg:hidden items-end flex-col'>
             <img src={Mock.src} className='w-full rounded h-auto mr-12' alt='Mockup Image'/>
           </div>
           <div className='flex justify-start w-5/12 lg:w-full items-start flex-col'>
-            <h1 className='text-5xl w-full text-start'>Burn-out Test</h1>
-            <h1 className='text-xl w-full text-start'>Doe de test en zle wat wllje kunng0 ke tellen over jouw situatie. Je krijgt van ous direct Antwoord.</h1>
+            <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
+            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct Antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
               <li>Of dit eeg burn-out is. </li>
               <li className='mt-2'>Zo ja, wat voor short Burn-out</li>
               <li className='mt-2'>Over je energielevel</li>
             </ul>
             <button onClick={()=>{setPage('How')}} className='mt-8 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
-              Start Quiz
+              Start Test
             </button>
             <h1 className='text-md mt-4'>De test duurt circa 10 minuten</h1>
           </div>
         </div> : page == 'How' ? 
         
-        <div className='min-h-screen flex-col flex justify-center items-center lg:items-start w-full border-[20px] p-4 border-white'>
+        <div className='min-h-screen flex-col flex justify-center items-center lg:items-start w-full border-[14px] p-4 border-white'>
           <h1 className='text-5xl font-bold lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>
           <h1 className='text-xl mt-2 text-center w-7/12 lg:w-full lg:text-start'>Antwoordmogelijkheden zijn telkens cijfers tussen 1 en 10, Cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie. <br/>Test en gradeer iedere bewering met je gevoel en het eerste cijfer wat binnenvalt alt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring. <br/>De test neemt ongeveer 10 minuten in beslag. <br/>Wordt nooit ongerust van wat voor test dan ook. De test is er om een diagnose te maken en te kijken wat we kunnen doen om je score gezond hoog te krijgen. <br/>ledere uitslag is dus een goede uitslag, veel success.</h1>
           <button onClick={()=>{setPage('Quiz')}} className='mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>

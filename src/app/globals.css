@@ -6,6 +6,11 @@
   font-family: primaryFont;
   src: url('../assets/Candara.ttf');
 }
+@font-face {
+  font-family: primaryFont;
+  src: url('../assets/Candaral.ttf');
+  font-weight: 300;
+}
 .checkbox-rounded {
   width: 25px;
   height: 25px;

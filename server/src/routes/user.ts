@@ -103,25 +103,22 @@ router.post('/create', async (req,res) => {
     text += `<br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+34 604 422875`
 
     sendEmail('Amanitya Burnout Quiz', data.email, title, text)
-
-    const doc = await userCollection.findOne({email: data.email})
-    if(doc == null || !doc) {
-        userCollection.insertOne({
-            email: data.email,
-            name: data.name,
-            phone: data.number,
-            energyLevel: {
-                energielevel: Number(data.energyLevel.energielevel),
-                activerende: Number(data.energyLevel.activerende),
-                blokkade: Number(data.energyLevel.blokkade),
-                focus: Number(data.energyLevel.focus),
-                hyper: Number(data.energyLevel.hyper),
-                energiereserves: Number(data.energyLevel.energiereserves)
-            },
-            time: Date.now()
-        })
-        console.log('User added to collection ' + data.email)
-    }
+    
+    userCollection.insertOne({
+        email: data.email,
+        name: data.name,
+        phone: data.number,
+        energyLevel: {
+            energielevel: Number(data.energyLevel.energielevel),
+            activerende: Number(data.energyLevel.activerende),
+            blokkade: Number(data.energyLevel.blokkade),
+            focus: Number(data.energyLevel.focus),
+            hyper: Number(data.energyLevel.hyper),
+            energiereserves: Number(data.energyLevel.energiereserves)
+        },
+        time: Date.now()
+    })
+    console.log('User added to collection ' + data.email)
 
     return res.json({data: 'Success', code: 200})
 })

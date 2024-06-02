@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Burn Out Quiz",
   description: "Take the burnout quiz by Amantiya.",
+  icons: {
+    icon: '/favicon.jpg',
+    apple: '/favicon.svg'
+  }
 };
 
 export default function RootLayout({
