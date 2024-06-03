@@ -26,7 +26,7 @@ export default function Home() {
   })
   const [questions, setQuestions] = React.useState<Array<Question>>([
     {
-      question: 'Ik voel me vitaal en sterk.',
+      question: 'Ik voel me vitaal en sterk:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
@@ -54,7 +54,7 @@ export default function Home() {
       category: 'Peil activerende energie'
     },
     {
-      question: 'Om 11.00 heeft mijn energie niveau.',
+      question: 'Om 11.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
       answer: 0,
@@ -96,336 +96,336 @@ export default function Home() {
       category: 'Energielevel'
     },
     {
-      question: 'Om 21.00 ben ik niet moe en wil nog niet naar bed.',
+      question: 'Om 21.00 ben ik niet moe en wil nog niet naar bed:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'Ik slaap goed in.',
+      question: 'Ik slaap goed in:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik slaap rustig en kalm.',
+      question: 'Ik slaap rustig en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: "Ik word s'nachts niet wakker.",
+      question: "Ik word s'nachts niet wakker:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik word niet snel moe van lichte lichamelijke arbeid zoals, poetsen, tuin werk, knutselen etc.',
+      question: 'Ik word niet snel moe van lichte lichamelijke arbeid zoals, poetsen, tuin werk, knutselen etc:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'Ik kan goed een paar uur achter de computer werken.',
+      question: 'Ik kan goed een paar uur achter de computer werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'Op mijn werk voel ik me energiek.',
+      question: 'Op mijn werk voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'Thuis voel ik me energiek.',
+      question: 'Thuis voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'In de weekenden en op vakantie ben ik uitgerust.',
+      question: 'In de weekenden en op vakantie ben ik uitgerust:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energielevel'
     },
     {
-      question: 'Mijn buik voelt altijd lekker en kalm.',
+      question: 'Mijn buik voelt altijd lekker en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,  
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb nooit last van mijn lage rug.',
+      question: 'Ik heb nooit last van mijn lage rug:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen regelmatige last van hoofdpijn.',
+      question: 'Ik heb geen regelmatige last van hoofdpijn:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van een gespannen nek.',
+      question: 'Ik heb geen last van een gespannen nek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van stijfheid in mijn gewrichten.',
+      question: 'Ik heb geen last van stijfheid in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van pijn in mijn gewrichten.',
+      question: 'Ik heb geen last van pijn in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Mijn borstkas voelt altijd ontspannen.',
+      question: 'Mijn borstkas voelt altijd ontspannen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen pijn in pezen of spieren.',
+      question: 'Ik heb geen pijn in pezen of spieren:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van kortademigheid.',
+      question: 'Ik heb geen last van kortademigheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van hartkloppingen.',
+      question: 'Ik heb geen last van hartkloppingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van een algeheel gestrest gevoel.',
+      question: 'Ik heb geen last van een algeheel gestrest gevoel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Blokkade'
     },
     {
-      question: 'Ik heb geen last van spontaan zweet.',
+      question: 'Ik heb geen last van spontaan zweet:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: "Ik heb geen last van hete voeten s'nachts of van hogere lichaamswarmte.",
+      question: "Ik heb geen last van hete voeten s'nachts of van hogere lichaamswarmte:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik heb het niet eerder koud nu in vergelijking met vroeger.',
+      question: 'Ik heb het niet eerder koud nu in vergelijking met vroeger:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Mijn stoelgang is niet te hard.',
+      question: 'Mijn stoelgang is niet te hard:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Mijn stoelgang is niet te zacht.',
+      question: 'Mijn stoelgang is niet te zacht:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Ik heb geen last van koude voeten of handen.',
+      question: 'Ik heb geen last van koude voeten of handen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'In de winter voel ik me niet vaker moe dan in de zomer.',
+      question: 'In de winter voel ik me niet vaker moe dan in de zomer:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Ik heb geen allergieën.',
+      question: 'Ik heb geen allergieën:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Ik heb geen last van mijn maag, buikpijn, misselijkheid of oprispingen.',
+      question: 'Ik heb geen last van mijn maag, buikpijn, misselijkheid of oprispingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Ik heb geen last van spontane neusbloedingen, anale bloedingen, blauwe plekken of te hevige menstruele bloedingen.',
+      question: 'Ik heb geen last van spontane neusbloedingen, anale bloedingen, blauwe plekken of te hevige menstruele bloedingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Peil activerende energie'
     },
     {
-      question: 'Ik ben niet prikkelbaar voor licht, lampen of lichtflitsen.',
+      question: 'Ik ben niet prikkelbaar voor licht, lampen of lichtflitsen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik ben niet prikkelbaar voor geluiden.',
+      question: 'Ik ben niet prikkelbaar voor geluiden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik voel me goed in een grotere groep mensen.',
+      question: 'Ik voel me goed in een grotere groep mensen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik kan goed tegen rumoer en chaos om me heen.',
+      question: 'Ik kan goed tegen rumoer en chaos om me heen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik voel me kalm en verdraagzaam bij mijn familie, kinderen en beste vrienden.',
+      question: 'Ik voel me kalm en verdraagzaam bij mijn familie, kinderen en beste vrienden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik voel me niet nerveus.',
+      question: 'Ik voel me niet nerveus:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Hypersensiviteit'
     },
     {
-      question: 'Ik voel me niet angstig.',
+      question: 'Ik voel me niet angstig:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik schrik niet snel.',
+      question: 'Ik schrik niet snel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik ben niet snel emotioneel.',
+      question: 'Ik ben niet snel emotioneel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik ben niet depressief.',
+      question: 'Ik ben niet depressief:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik heb vertrouwen in mijn gezondheid.',
+      question: 'Ik heb vertrouwen in mijn gezondheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Energiereserves'
     },
     {
-      question: 'Ik ben gefocust en kan gericht werken.',
+      question: 'Ik ben gefocust en kan gericht werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik kan goed een boek of stuk tekst lezen.',
+      question: 'Ik kan goed een boek of stuk tekst lezen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik kan na werk goed afschakelen.',
+      question: 'Ik kan na werk goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik kan na een emotionele gebeurtenis goed afschakelen.',
+      question: 'Ik kan na een emotionele gebeurtenis goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik heb mijn gedachten op een rijtje.',
+      question: 'Ik heb mijn gedachten op een rijtje:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik kan goed rekenen, duidelijk formuleren en mijn talen spreken.',
+      question: 'Ik kan goed rekenen, duidelijk formuleren en mijn talen spreken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
       category: 'Naveau van focus'
     },
     {
-      question: 'Ik pieker niet veel en maak me niet veel zorgen.',
+      question: 'Ik pieker niet veel en maak me niet veel zorgen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
       answer: 0,
@@ -492,14 +492,14 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-row mt-4 justify-center items-center w-full'>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/")}}>AMANTIYA &gt;</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/methode/")}}>Methode</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/programma/")}}>Programma</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/ons-resort/")}}>Ons Resort</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/over-ons/")}}>Over ons</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/faq/")}}>Faq</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/blog/")}}>Blog</h1>
-          <h1 className='text-black mx-3.5 font-light border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/contact/")}}>Contact</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/")}}>AMANTIYA &gt;</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/methode/")}}>Methode</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/programma/")}}>Programma</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/ons-resort/")}}>Ons Resort</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/over-ons/")}}>Over ons</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/faq/")}}>Faq</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/blog/")}}>Blog</h1>
+          <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/contact/")}}>Contact</h1>
         </div>
       </div>
       <div className='min-h-screen flex flex-col px-24 justify-center items-center lg:px-8'>

@@ -111,22 +111,32 @@ export function getResults(questions: Array<Question>): Result {
 
     // Calculating type
     if(result.algemeenGrads == 1 && energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) result.type = 'De Overload Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.hyper >= 1.5) result.type = 'De Hypersensitive Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic/Hypersensitive Burnout'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.energiereserves <= 1.5) result.type = 'De Rockbottom Burnout'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout Shutdown'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout/Rockbottom Shutdown'
+    if(result.algemeenGrads == 2) result.type = 'De Overload Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.hyper >= 1.5) result.type = 'De Hypersensitive Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.focus >= 1.5 && energyLevels.hyper >= 1.5) result.type = 'De Chaotic/Hypersensitive Burnout'
+    if(result.algemeenGrads == 3) result.type = 'De Overload Burnout'
+    if(result.algemeenGrads == 3 && energyLevels.energiereserves <= 1.5) result.type = 'De Rockbottom Burnout'
+    if(result.algemeenGrads == 3 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout Shutdown'
+    if(result.algemeenGrads == 3 && energyLevels.blokkade <= 1.0 && energyLevels.energiereserves <= 1.5) result.type = 'De Burnout/Rockbottom Shutdown'
     return result
 }
 export async function getSemiResults(result: Result, energyLevels: EnergyLevels) {
+    // Calculating algemeen Grads
+    if(energyLevels.energielevel <= 2.8 && energyLevels.energielevel > 2.2) result.algemeenGrads = 1
+    if(energyLevels.energielevel <= 2.2 && energyLevels.energielevel > 1.6) result.algemeenGrads = 2
+    if(energyLevels.energielevel <= 1.5) result.algemeenGrads = 3
+
+    // Calculating type
     if(result.algemeenGrads == 1 && energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) result.type = 'De Overload Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.hyper >= 1.5) result.type = 'De Hypersensitive Burnout'
-    if(result.algemeenGrads == 2 && energyLevels.energielevel <= 2.2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic/Hypersensitive Burnout'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.energiereserves <= 1.5) result.type = 'De Rockbottom Burnout'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout Shutdown'
-    if(result.algemeenGrads == 3 && energyLevels.energielevel <= 1.5 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout/Rockbottom Shutdown'
+    if(result.algemeenGrads == 2) result.type = 'De Overload Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.focus >= 1.5) result.type = 'De Chaotic Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.hyper >= 1.5) result.type = 'De Hypersensitive Burnout'
+    if(result.algemeenGrads == 2 && energyLevels.focus >= 1.5 && energyLevels.hyper >= 1.5) result.type = 'De Chaotic/Hypersensitive Burnout'
+    if(result.algemeenGrads == 3) result.type = 'De Overload Burnout'
+    if(result.algemeenGrads == 3 && energyLevels.energiereserves <= 1.5) result.type = 'De Rockbottom Burnout'
+    if(result.algemeenGrads == 3 && energyLevels.blokkade <= 1.0) result.type = 'De Burnout Shutdown'
+    if(result.algemeenGrads == 3 && energyLevels.blokkade <= 1.0 && energyLevels.energiereserves <= 1.5) result.type = 'De Burnout/Rockbottom Shutdown'
     console.log(result.type)
 }
 getSemiResults(

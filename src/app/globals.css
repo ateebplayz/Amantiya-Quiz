@@ -1,15 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
-  font-family: primaryFont;
-  src: url('../assets/Candara.ttf');
+  font-family: secondaryFont;
+  src: url('../assets/Raleway-Light.ttf');
 }
 @font-face {
   font-family: primaryFont;
-  src: url('../assets/Candaral.ttf');
-  font-weight: 300;
+  src: url('../assets/Raleway-Regular.ttf');
 }
 .checkbox-rounded {
   width: 25px;

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['primaryFont', 'sans-serif']
+        primary: ['primaryFont', 'sans-serif'],
+        secondary: ['secondaryFont', 'sans-serif']
       },
       colors: {
         primary: '#F3EEE7',
