@@ -102,7 +102,7 @@ router.post('/create', async (req,res) => {
     text += '<img src="https://i.imgur.com/OgnG0az.png" alt="Logo"></img>'
     text += `<br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+34 604 422875`
 
-    sendEmail('Amanitya Burnout Quiz', data.email, title, text)
+    sendEmail('AmanTiya Burn out Test', data.email, title, text)
     
     userCollection.insertOne({
         email: data.email,

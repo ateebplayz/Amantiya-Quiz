@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Burn Out Quiz",
+  title: "AmanTiya Burn out test",
   description: "Take the burnout quiz by Amantiya.",
   icons: {
     icon: '/favicon.jpg',

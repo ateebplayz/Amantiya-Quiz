@@ -29,406 +29,406 @@ export default function Home() {
       question: 'Ik voel me vitaal en sterk:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Mijn energie als ik wakker word heeft niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Na tien minuten wakker te zijn heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in ontbijt en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Om 11.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in lunch en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na de lunch heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Om 16.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in avondeten en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na het avondeten heeft mijn energie niveau:',
       startVal: '',
       endVal: '',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Om 21.00 ben ik niet moe en wil nog niet naar bed:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Ik slaap goed in:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik slaap rustig en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: "Ik word s'nachts niet wakker:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik word niet snel moe van lichte lichamelijke arbeid zoals, poetsen, tuin werk, knutselen etc:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Ik kan goed een paar uur achter de computer werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Op mijn werk voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Thuis voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'In de weekenden en op vakantie ben ik uitgerust:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energielevel'
     },
     {
       question: 'Mijn buik voelt altijd lekker en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,  
+      answer: 1,  
       category: 'Blokkade'
     },
     {
       question: 'Ik heb nooit last van mijn lage rug:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen regelmatige last van hoofdpijn:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een gespannen nek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van stijfheid in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van pijn in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Mijn borstkas voelt altijd ontspannen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen pijn in pezen of spieren:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van kortademigheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van hartkloppingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een algeheel gestrest gevoel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van spontaan zweet:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: "Ik heb geen last van hete voeten s'nachts of van hogere lichaamswarmte:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb het niet eerder koud nu in vergelijking met vroeger:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te hard:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te zacht:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van koude voeten of handen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'In de winter voel ik me niet vaker moe dan in de zomer:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen allergieën:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van mijn maag, buikpijn, misselijkheid of oprispingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van spontane neusbloedingen, anale bloedingen, blauwe plekken of te hevige menstruele bloedingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik ben niet prikkelbaar voor licht, lampen of lichtflitsen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik ben niet prikkelbaar voor geluiden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me goed in een grotere groep mensen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik kan goed tegen rumoer en chaos om me heen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me kalm en verdraagzaam bij mijn familie, kinderen en beste vrienden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet nerveus:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet angstig:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik schrik niet snel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet snel emotioneel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet depressief:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb vertrouwen in mijn gezondheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben gefocust en kan gericht werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed een boek of stuk tekst lezen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na werk goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na een emotionele gebeurtenis goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik heb mijn gedachten op een rijtje:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed rekenen, duidelijk formuleren en mijn talen spreken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik pieker niet veel en maak me niet veel zorgen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 0,
+      answer: 1,
       category: 'Peil activerende energie'
     },
   ])
@@ -521,13 +521,12 @@ export default function Home() {
   const [page, setPage] = React.useState<'Home' | 'How' | 'Quiz'>('Home')
   return (
     <div className="bg-primary flex flex-col justify-center items-center w-full min-h-screen font-primary">
-      <div className="w-full relative bg-F3EEE7 pt-4 flex justify-between items-center flex-col px-12 lg:px-4 shadow-md">
-        {/*
+      <div className="w-full h-[72px] relative border-b-buttonBorder border-b-[1px] bg-F3EEE7 flex justify-between items-center px-24 lg:px-4 py-8">
           <img src={Logo.src} className='h-[72px]'/>
           <button onClick={()=>{window.open('https://amantiya.com/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
             Terug
           </button>
-        */}
+        {/*
         <div className='grid grid-cols-3 gap-4 w-full'>
           <div className=''/>  
           <div className='flex justify-center items-center'>
@@ -549,12 +548,13 @@ export default function Home() {
           <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/blog/")}}>Blog</h1>
           <h1 className='text-black mx-3.5 font-secondary border-b-[1px] border-transparent pb-6 transition duration-500 hover:border-black cursor-pointer' onClick={()=>{window.open("https://amantiya.com/contact/")}}>Contact</h1>
         </div>
+        */}
       </div>
-      <div className='min-h-screen flex flex-col px-24 justify-center items-center lg:px-8'>
+      <div className='min-h-screen flex flex-col px-24 justify-center w-full items-center lg:px-0'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='flex-col flex justify-center items-center w-full border-[14px] border-white'>
+        <div className='flex-col flex justify-center items-center w-9/12 lg:w-full border-[6px] border-white'>
           <div className='p-8 flex justify-center items-center flex-col'>
-            <button className='mt-4 w-24 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] px-6 py-2 text-lg'>
+            <button className='mt-4 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] p-2 px-3 text-lg'>
               {question + 1}/{questions.length}
             </button>
             <h1 className='text-3xl mt-4 max-w-[40rem] text-center'>{questions[question].question}</h1>
@@ -589,24 +589,25 @@ export default function Home() {
         </div>
         : page == 'Quiz' ?   
         submitted ?
-        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[14px] border-white'>
+        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[6px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
-            <h1 className='text-4xl text-center'>Dank jewel voor het invullen van de test.</h1>
+            <img src={Logo.src} className='h-32'/>
+            <h1 className='text-3xl text-center'>Dank jewel voor het invullen van de test.</h1>
             <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
           </div>
         </div>
-        : <div className='min-h-screen flex-col flex justify-center items-center w-full border-[14px] border-white'>
-        <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
+        : <div className='min-h-screen flex-col flex justify-center items-center p-0 border-[6px] border-white'>
+        <div className='w-full h-full p-8 flex justify-end items-center flex-col'>
           {result.type == 'De Overload Burnout' && result.algemeenGrads == 2 ? 
-          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 2e graads <span className='text-blue-500'>Overload Burn out</span> hebt.</h1>
+          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 2e graads <span className=''>Overload Burn out</span> hebt.</h1>
           :
           result.type == 'De Overload Burnout' && result.algemeenGrads == 3 ?
-          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 3e graads <span className='text-blue-500'>Overload Burn out</span> hebt.</h1>
+          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 3e graads <span className=''>Overload Burn out</span> hebt.</h1>
           :
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
           }
           {result.type == 'De Geen Burn out' ?
-          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('https://burnout.amantiya.com/uploads/document.pdf')}}>Klik hier</span> voor meer info.</p>
+          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('https://amantiya.com/wp-content/uploads/2024/04/Brochure-.pdf')}}>Klik hier</span> voor meer info.</p>
           :
           <p className={`text-start text-xl`}>{getParagraphOfResult()}</p>
           }
@@ -614,12 +615,12 @@ export default function Home() {
           <div className='flex justify-start w-full items-start flex-col'>
             <input onChange={(e)=>{setName(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Naam'/>
             <input onChange={(e)=>{setEmail(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Email'/>
-            <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='niet verplicht Telefoon'/>
+            <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Telefoon niet verplicht'/>
             <label className="inline-flex items-center mt-4">
               <input type="checkbox" checked={checked} onChange={()=>{setChecked(!checked)}} className="checkbox-rounded" />
               <span className="ml-2 text-md">Vink aan, en wij nemen contact met u op voor het plannen van een gratis intake </span> 
             </label>
-            <button onClick={handleSubmit} className={`mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 ${name.length < 2 || email.length < 3 || !email.includes('@') || !email.includes('.') ? 'opacity-50 curser-not-allowed pointer-events-none' : ''}`}>
+            <button onClick={handleSubmit} className={`mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2 ${name.length < 2 || email.length < 3 || !email.includes('@') || !email.includes('.') ? 'opacity-50 curser-not-allowed pointer-events-none' : ''}`}> 
               Verstuur
             </button>
             <h1 className='text-xl mt-4'><span className='font-bold'>Let op </span>deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</h1>
@@ -627,7 +628,7 @@ export default function Home() {
         </div>
       </div> : ''}
         {page == 'Home' ?
-        <div className='flex-row flex justify-center p-2 items-center w-10/12 lg:w-full border-[14px] border-white p-0'>
+        <div className='flex-row flex justify-center p-2 items-center w-9/12 lg:w-full lg:w-full border-[6px] border-white p-0'>
           <div className='flex justify-end w-[300px] lg:hidden items-end flex-col'>
             <img src={Mock.src} className='w-full rounded h-auto mr-12' alt='Mockup Image'/>
           </div>
@@ -646,12 +647,14 @@ export default function Home() {
           </div>
         </div> : page == 'How' ? 
         
-        <div className='min-h-screen flex-col flex justify-center items-center lg:items-start w-full border-[14px] p-4 border-white'>
-          <h1 className='text-5xl font-bold lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>
-          <h1 className='text-xl mt-2 text-center w-7/12 lg:w-full lg:text-start'>Antwoordmogelijkheden zijn telkens cijfers tussen 1 en 10, Cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie. <br/>Test en gradeer iedere bewering met je gevoel en het eerste cijfer wat binnenvalt alt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring. <br/>De test neemt ongeveer 10 minuten in beslag. <br/>Wordt nooit ongerust van wat voor test dan ook. De test is er om een diagnose te maken en te kijken wat we kunnen doen om je score gezond hoog te krijgen. <br/>ledere uitslag is dus een goede uitslag, veel success.</h1>
-          <button onClick={()=>{setPage('Quiz')}} className='mt-4 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
-            Verder
-          </button>
+        <div className='flex-col flex justify-center w-9/12 lg:w-full items-center lg:items-start w-full border-[6px] p-8 border-white'>
+          <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>          
+          <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/>Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
+          <div className='flex items-start justify-start flex-row w-full'>
+            <button onClick={()=>{setPage('Quiz')}} className='mt-4 self-start border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
+              Verder
+            </button>
+          </div>
         </div> : ''}
       </div>
     </div>
