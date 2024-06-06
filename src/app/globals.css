@@ -37,3 +37,17 @@
 .animate-shake {
   animation: shake 300ms infinite linear;
 }
+
+.hold {
+  position: relative;
+}
+
+input[required="required"]:valid + .req_placeholder {
+  display: none;
+}
+
+.req_placeholder {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}

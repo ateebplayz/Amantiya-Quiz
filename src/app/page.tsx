@@ -550,9 +550,9 @@ export default function Home() {
         </div>
         */}
       </div>
-      <div className='min-h-screen flex flex-col px-24 justify-center w-full items-center lg:px-0'>
+      <div className='min-h-screen flex flex-col justify-center w-full items-center lg:px-0'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='flex-col flex justify-center items-center w-9/12 lg:w-full border-[6px] border-white'>
+        <div className='flex-col flex justify-center items-center w-5/12 lg:w-full border-[20px] border-white'>
           <div className='p-8 flex justify-center items-center flex-col'>
             <button className='mt-4 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] p-2 px-3 text-lg'>
               {question + 1}/{questions.length}
@@ -589,14 +589,14 @@ export default function Home() {
         </div>
         : page == 'Quiz' ?   
         submitted ?
-        <div className='min-h-screen flex-col flex justify-center items-center w-full border-[6px] border-white'>
+        <div className='mx-24 lg:mx-4 flex-col flex justify-center items-center w-9/12 border-[20px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
-            <img src={Logo.src} className='h-32'/>
+            <img src={Logo.src} className='h-32 mb-8'/>
             <h1 className='text-3xl text-center'>Dank jewel voor het invullen van de test.</h1>
             <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
           </div>
         </div>
-        : <div className='min-h-screen flex-col flex justify-center items-center p-0 border-[6px] border-white'>
+        : <div className='min-h-screen mx-24 lg:mx-4 flex-col flex justify-center items-center p-8 border-[20px] border-white'>
         <div className='w-full h-full p-8 flex justify-end items-center flex-col'>
           {result.type == 'De Overload Burnout' && result.algemeenGrads == 2 ? 
           <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 2e graads <span className=''>Overload Burn out</span> hebt.</h1>
@@ -607,7 +607,7 @@ export default function Home() {
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
           }
           {result.type == 'De Geen Burn out' ?
-          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('https://amantiya.com/wp-content/uploads/2024/04/Brochure-.pdf')}}>Klik hier</span> voor meer info.</p>
+          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
           :
           <p className={`text-start text-xl`}>{getParagraphOfResult()}</p>
           }
@@ -615,7 +615,10 @@ export default function Home() {
           <div className='flex justify-start w-full items-start flex-col'>
             <input onChange={(e)=>{setName(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Naam'/>
             <input onChange={(e)=>{setEmail(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Email'/>
-            <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Telefoon niet verplicht'/>
+            <div className="hold">
+              <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 focus:outline-none w-96 flex justify-center items-center' id='phoneNum'/>
+              <span className="req_placeholder flex justify-start pl-3 items-center w-full h-full text-slate-500">Telefoon <span className='text-xs ml-1'>niet verplicht</span></span>
+            </div>
             <label className="inline-flex items-center mt-4">
               <input type="checkbox" checked={checked} onChange={()=>{setChecked(!checked)}} className="checkbox-rounded" />
               <span className="ml-2 text-md">Vink aan, en wij nemen contact met u op voor het plannen van een gratis intake </span> 
@@ -628,11 +631,11 @@ export default function Home() {
         </div>
       </div> : ''}
         {page == 'Home' ?
-        <div className='flex-row flex justify-center p-2 items-center w-9/12 lg:w-full lg:w-full border-[6px] border-white p-0'>
-          <div className='flex justify-end w-[300px] lg:hidden items-end flex-col'>
-            <img src={Mock.src} className='w-full rounded h-auto mr-12' alt='Mockup Image'/>
+        <div className='flex-row flex justify-center p-2 items-center w-9/12 lg:w-full lg:w-full border-[20px] border-white p-0'>
+          <div className='flex justify-start w-4/12 lg:hidden items-start flex-col'>
+            <img src={Mock.src} className='w-[300px] rounded h-auto mr-12' alt='Mockup Image'/>
           </div>
-          <div className='flex justify-start w-5/12 lg:w-full items-start flex-col'>
+          <div className='flex justify-start w-8/12 lgo:pl-8 lg:w-full items-start flex-col'>
             <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
             <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct Antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
@@ -647,7 +650,7 @@ export default function Home() {
           </div>
         </div> : page == 'How' ? 
         
-        <div className='flex-col flex justify-center w-9/12 lg:w-full items-center lg:items-start w-full border-[6px] p-8 border-white'>
+        <div className='flex-col flex justify-center w-9/12 items-center lg:items-start border-[20px] p-8 border-white'>
           <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>          
           <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/>Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
           <div className='flex items-start justify-start flex-row w-full'>
