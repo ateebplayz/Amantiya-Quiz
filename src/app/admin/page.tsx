@@ -43,21 +43,30 @@ function AdminPage() {
     const getResults = (energyLevels: { energielevel: number; focus: number; hyper: number; energiereserves: number; blokkade: number }) => {
         let type = ``
         let algemeenGrads = 0
-    // Calculating algemeen Grads
-        if(energyLevels.energielevel <= 2.8 && energyLevels.energielevel > 2.2) algemeenGrads = 1
-        if(energyLevels.energielevel <= 2.2 && energyLevels.energielevel > 1.6) algemeenGrads = 2
-        if(energyLevels.energielevel <= 1.5) algemeenGrads = 3
-
-        // Calculating type
-        if(algemeenGrads == 1 && energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) type = 'De Overload Burnout'
-        if(algemeenGrads == 2) type = 'De Overload Burnout'
-        if(algemeenGrads == 2 && energyLevels.focus >= 1.5) type = 'De Chaotic Burnout'
-        if(algemeenGrads == 2 && energyLevels.hyper >= 1.5) type = 'De Hypersensitive Burnout'
-        if(algemeenGrads == 2 && energyLevels.focus >= 1.5 && energyLevels.hyper >= 1.5) type = 'De Chaotic/Hypersensitive Burnout'
-        if(algemeenGrads == 3) type = 'De Overload Burnout'
-        if(algemeenGrads == 3 && energyLevels.energiereserves <= 1.5) type = 'De Rockbottom Burnout'
-        if(algemeenGrads == 3 && energyLevels.blokkade <= 1.0) type = 'De Burnout Shutdown'
-        if(algemeenGrads == 3 && energyLevels.blokkade <= 1.0 && energyLevels.energiereserves <= 1.5) type = 'De Burnout/Rockbottom Shutdown'
+        if (energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) {
+            algemeenGrads = 1;
+            type = 'De Overload Burnout';
+        } else if (energyLevels.energielevel <= 2.2 && energyLevels.energielevel > 1.6) {
+            algemeenGrads = 2;
+            // Specific checks for 2e graads types
+            if (energyLevels.focus < 1.5 && energyLevels.hyper < 1.5) {
+                type = 'De Chaotic/Hypersensitive Burnout';
+            } else if (energyLevels.focus < 1.5) {
+                type = 'De Chaotic Burnout';
+            } else if (energyLevels.hyper < 1.5) {
+                type = 'De Hypersensitive Burnout';
+            }
+        } else if (energyLevels.energielevel <= 1.5) {
+            algemeenGrads = 3;
+            // Specific checks for 3e graads types
+            if (energyLevels.energiereserves < 1.5 && energyLevels.blokkade < 1) {
+                type = 'De Burnout/Rockbottom Shutdown';
+            } else if (energyLevels.blokkade < 1) {
+                type = 'De Burnout Shutdown';
+            } else if (energyLevels.energiereserves < 1.5) {
+                type = 'De Rockbottom Burnout';
+            }
+        }
         return type
     }
     const deleteDoc = async (docEmail: string) => {

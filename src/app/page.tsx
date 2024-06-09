@@ -29,406 +29,406 @@ export default function Home() {
       question: 'Ik voel me vitaal en sterk:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Mijn energie als ik wakker word heeft niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Na tien minuten wakker te zijn heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in ontbijt en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Om 11.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in lunch en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na de lunch heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Om 16.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in avondeten en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na het avondeten heeft mijn energie niveau:',
       startVal: '',
       endVal: '',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Om 21.00 ben ik niet moe en wil nog niet naar bed:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik slaap goed in:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik slaap rustig en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: "Ik word s'nachts niet wakker:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik word niet snel moe van lichte lichamelijke arbeid zoals, poetsen, tuin werk, knutselen etc:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik kan goed een paar uur achter de computer werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Op mijn werk voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Thuis voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'In de weekenden en op vakantie ben ik uitgerust:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Mijn buik voelt altijd lekker en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,  
+      answer: 0,  
       category: 'Blokkade'
     },
     {
       question: 'Ik heb nooit last van mijn lage rug:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen regelmatige last van hoofdpijn:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een gespannen nek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van stijfheid in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van pijn in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Mijn borstkas voelt altijd ontspannen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen pijn in pezen of spieren:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van kortademigheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van hartkloppingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een algeheel gestrest gevoel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van spontaan zweet:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: "Ik heb geen last van hete voeten s'nachts of van hogere lichaamswarmte:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb het niet eerder koud nu in vergelijking met vroeger:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te hard:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te zacht:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van koude voeten of handen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'In de winter voel ik me niet vaker moe dan in de zomer:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen allergieën:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van mijn maag, buikpijn, misselijkheid of oprispingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van spontane neusbloedingen, anale bloedingen, blauwe plekken of te hevige menstruele bloedingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik ben niet prikkelbaar voor licht, lampen of lichtflitsen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik ben niet prikkelbaar voor geluiden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me goed in een grotere groep mensen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik kan goed tegen rumoer en chaos om me heen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me kalm en verdraagzaam bij mijn familie, kinderen en beste vrienden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet nerveus:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet angstig:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik schrik niet snel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet snel emotioneel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet depressief:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb vertrouwen in mijn gezondheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben gefocust en kan gericht werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed een boek of stuk tekst lezen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na werk goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na een emotionele gebeurtenis goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik heb mijn gedachten op een rijtje:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed rekenen, duidelijk formuleren en mijn talen spreken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik pieker niet veel en maak me niet veel zorgen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
   ])
@@ -486,7 +486,7 @@ export default function Home() {
         return 'Uit je antwoorden blijkt dat je een combinatie hebt van de Rock Bottom Burn out en een Burn out Shutdown'
       case 'De Chaotic/Hypersensitive Burnout':
         return 'Uit je antwoorden blijkt dat je een combinatie hebt van de Chaotic Burn en Hypersensitive Burn out'
-      case 'De Geen Burn out':
+      case 'Geen Burn out':
         return 'Uit je antwoord blijkt dat je geen burn out hebt'
     }
     // This is impossible to get.
@@ -496,27 +496,50 @@ export default function Home() {
     switch (result.type) {
       case 'De Overload Burnout':
         if(result.algemeenGrads == 2) {
-          return 'Jouw Burn out is een 2e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. \n\nJouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust\n\nNatuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\nJouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.  \n\nJe systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.'
+          return 'Jouw Burn out is een 2e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. \n\n Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust \n\n Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\n Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. \n\n Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.'
         } else if(result.algemeenGrads == 3) {
-          return 'Jouw Burn out is een 3e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. \n\nJouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust\n\nNatuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\nJouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. \n\nJe systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.'
+          return 'Jouw Burn out is een 3e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. \n\n Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust \n\n Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\n Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. \n\n Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.'
         }
-        return 'Jouw Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.\n\nJouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust\n\nNatuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\nJouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. '
+        return 'Jouw Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.\n\n Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust \n\n Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. \n\n Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. '
       case 'De Chaotic Burnout':
-        return 'De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. \n\nJouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie.\n\nJouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.'
+        return 'De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. \n\n Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. \n\n Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.'
       case 'De Hypersensitive Burnout':
-        return 'Jouw burn out is een 2e graads Burn out. Bij deze Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid.\n\nBurn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.\n\nBij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. \n\nJouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.'
+        return 'Jouw burn out is een 2e graads Burn out. Bij deze Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid.\n\n Burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.\n\n Bij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. \n\n Jouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.'
       case 'De Rockbottom Burnout':
-        return 'De rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’\n\nJouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op. hebt geen eetlust, een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos.\n\nJouw burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment'
+        return 'De rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’ \n\n Jouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op. hebt geen eetlust, een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos. \n\n Jouw burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment'
       case 'De Burnout Shutdown':
-        return 'Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond.\n\nJouw burn out symptomen: Je ervaart in zeer hoge mate oververmoeidheid. Er is een onrustige slaap met veel wakker worden. Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. \n\nJouw herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie bent, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.'
+        return 'Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond. \n\n Jouw burn out symptomen: Je ervaart in zeer hoge mate oververmoeidheid. Er is een onrustige slaap met veel wakker worden. Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. \n\n Jouw herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie bent, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.'
       case 'De Burnout/Rockbottom Shutdown':
-        return 'De Rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’\n\nJouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op.  Je hebt geen eetlust, hebt  een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos.\n\nBurn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment\n\nBovendien heb je een Burn out Shutdown\n\nBij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond.\n\nDe symptomen: Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. \n\nBurn out herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie is, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.'
+        return 'De Rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’ \n\n Jouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op.  Je hebt geen eetlust, hebt  een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos. \n\n Burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment \n\n Bovendien heb je een Burn out Shutdown \n\n Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond. \n\n De symptomen: Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. \n\n Burn out herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie is, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.'
       case 'De Chaotic/Hypersensitive Burnout':
-        return 'De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. \n\nJouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie.\n\nJouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.\n\nBovendien heb je een Hypersensitive Burn out\n\nBij de Hypersensitive Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid.\n\nJouw burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.  \n\nBij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. \n\nJouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.'
-      case 'De Geen Burn out':
+        return 'De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. \n\n Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. \n\n Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.\n\n Bovendien heb je een Hypersensitive Burn out \n\n Bij de Hypersensitive Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid. \n\n ouw burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.  \n\n Bij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. \n\n Jouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.'
+      case 'Geen Burn out':
         // Code for this is embedded in the TSX section
     }
     return 'Deze test is samengesteld om een antwoord te geven op je situatie van vermoeidheid. Jouw uitslagen zijn zodanig dat we geen uitspraak kunnen doen. Wil je hier meer over weten neem dan contact met ons op.'
+  }
+  const getJSXOfResult = () => {
+    switch (result.type) {
+      case 'De Overload Burnout':
+        if(result.algemeenGrads == 2) {
+          return <p className={`text-start text-xl`}>Jouw Burn out is een 2e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. <br/><br/>Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust.<br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter.<br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. \n\n Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.</p>
+        } else if(result.algemeenGrads == 3) {
+          return <p className={`text-start text-xl`}>Jouw Burn out is een 3e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/> Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust.<br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. <br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.<br/><br/> Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.</p>
+        }
+        return <p className={`text-start text-xl`}>Jouw Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/> Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust <br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. <br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.</p>
+      case 'De Chaotic Burnout':
+        return <p className={`text-start text-xl`}>De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. <br/><br/> Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. <br/><br/> Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.</p>
+      case 'De Hypersensitive Burnout':
+        return <p className={`text-start text-xl`}>Jouw burn out is een 2e graads Burn out. Bij deze Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid.<br/><br/> Burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.<br/><br/> Bij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. <br/><br/> Jouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.</p>
+      case 'De Rockbottom Burnout':
+        return <p className={`text-start text-xl`}>De rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’ <br/><br/> Jouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op. hebt geen eetlust, een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos. <br/><br/> Jouw burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment</p>
+      case 'De Burnout Shutdown':
+        return <p className={`text-start text-xl`}>Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond. <br/><br/> Jouw burn out symptomen: Je ervaart in zeer hoge mate oververmoeidheid. Er is een onrustige slaap met veel wakker worden. Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. <br/><br/> Jouw herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie bent, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.</p>
+      case 'De Burnout/Rockbottom Shutdown':
+        return <p className={`text-start text-xl`}>De Rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’ <br/><br/> Jouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op.  Je hebt geen eetlust, hebt  een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos. <br/><br/> Burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment <br/><br/> Bovendien heb je een Burn out Shutdown <br/><br/> Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond. <br/><br/> De symptomen: Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. <br/><br/> Burn out herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie is, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.</p>
+      case 'De Chaotic/Hypersensitive Burnout':
+        return <p className={`text-start text-xl`}>De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. <br/><br/> Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. <br/><br/> Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.<br/><br/> Bovendien heb je een Hypersensitive Burn out <br/><br/> Bij de Hypersensitive Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid. <br/><br/> ouw burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.  <br/><br/> Bij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. <br/><br/> Jouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.</p>
+    }
   }
   const [page, setPage] = React.useState<'Home' | 'How' | 'Quiz'>('Home')
   return (
@@ -552,7 +575,7 @@ export default function Home() {
       </div>
       <div className='min-h-screen flex flex-col justify-center w-full items-center lg:px-0'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='flex-col flex justify-center items-center w-5/12 lg:w-full border-[20px] border-white'>
+        <div className='flex-col flex justify-center w-9/12 items-center lg:items-start border-[20px] p-8 border-white' style={{ height: '492px', overflow: 'auto' }}>
           <div className='p-8 flex justify-center items-center flex-col'>
             <button className='mt-4 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] p-2 px-3 text-lg'>
               {question + 1}/{questions.length}
@@ -592,8 +615,8 @@ export default function Home() {
         <div className='mx-24 lg:mx-4 flex-col flex justify-center items-center w-9/12 border-[20px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
             <img src={Logo.src} className='h-32 mb-8'/>
-            <h1 className='text-3xl text-center'>Dank jewel voor het invullen van de test.</h1>
-            <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
+            <h1 className='text-3xl text-center'>Bedankt voor het maken van onze Burn out test.</h1>
+            <h1 className='text-2xl text-center'>U ontvangt van ons binnen elke minuten een email met de volledige uitslag.</h1>
           </div>
         </div>
         : <div className='min-h-screen mx-24 lg:mx-4 flex-col flex justify-center items-center p-8 border-[20px] border-white'>
@@ -606,10 +629,10 @@ export default function Home() {
           :
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
           }
-          {result.type == 'De Geen Burn out' ?
+          {result.type == 'Geen Burn out' ?
           <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
           :
-          <p className={`text-start text-xl`}>{getParagraphOfResult()}</p>
+          getJSXOfResult()
           }
           <h1 className={`text-lg text-start mt-6 font-primary`}>Uit de test kunnen wij nog meer informatie over je level van energie en over jouw specifieke kenmerken halen. Wil je dit ontvangen dan laten we dit samenstellen en sturen we het per email gratis naar je toe.</h1>
           <div className='flex justify-start w-full items-start flex-col'>
@@ -637,22 +660,22 @@ export default function Home() {
           </div>
           <div className='flex justify-start w-8/12 lgo:pl-8 lg:w-full items-start flex-col'>
             <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
-            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct Antwoord.</h1>
+            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
-              <li>Of dit eeg burn-out is. </li>
-              <li className='mt-2'>Zo ja, wat voor short Burn-out</li>
+              <li> Heb ik een Burn out? </li>
+              <li>Zo ja, wat voor soort Burn out.</li>
               <li className='mt-2'>Over je energielevel</li>
             </ul>
             <button onClick={()=>{setPage('How')}} className='mt-8 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
-              Start Test
+              Start test
             </button>
             <h1 className='text-md mt-4'>De test duurt circa 10 minuten</h1>
           </div>
         </div> : page == 'How' ? 
         
         <div className='flex-col flex justify-center w-9/12 items-center lg:items-start border-[20px] p-8 border-white'>
-          <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>          
-          <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/>Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
+          <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de test werkt</h1>          
+          <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/> <br/> Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
           <div className='flex items-start justify-start flex-row w-full'>
             <button onClick={()=>{setPage('Quiz')}} className='mt-4 self-start border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
               Verder
