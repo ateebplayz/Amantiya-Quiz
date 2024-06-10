@@ -41,31 +41,36 @@ function AdminPage() {
         (document.getElementById('modal_popup_results') as HTMLDialogElement).showModal();
     }
     const getResults = (energyLevels: { energielevel: number; focus: number; hyper: number; energiereserves: number; blokkade: number }) => {
-        let type = ``
+        let type = `2e Graads Overload Burn out`
         let algemeenGrads = 0
         if (energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) {
             algemeenGrads = 1;
             type = 'De Overload Burnout';
-        } else if (energyLevels.energielevel <= 2.2 && energyLevels.energielevel > 1.6) {
+        } else if (energyLevels.energielevel <= 2.2 && energyLevels.energielevel >= 1.6) {
             algemeenGrads = 2;
             // Specific checks for 2e graads types
-            if (energyLevels.focus < 1.5 && energyLevels.hyper < 1.5) {
+            if (energyLevels.focus <= 1.5 && energyLevels.hyper <= 1.5) {
                 type = 'De Chaotic/Hypersensitive Burnout';
-            } else if (energyLevels.focus < 1.5) {
+            } else if (energyLevels.focus <= 1.5) {
                 type = 'De Chaotic Burnout';
-            } else if (energyLevels.hyper < 1.5) {
+            } else if (energyLevels.hyper <= 1.5) {
                 type = 'De Hypersensitive Burnout';
             }
         } else if (energyLevels.energielevel <= 1.5) {
             algemeenGrads = 3;
             // Specific checks for 3e graads types
-            if (energyLevels.energiereserves < 1.5 && energyLevels.blokkade < 1) {
+            if (energyLevels.energiereserves <= 1.5 && energyLevels.blokkade <= 1) {
                 type = 'De Burnout/Rockbottom Shutdown';
-            } else if (energyLevels.blokkade < 1) {
+            } else if (energyLevels.blokkade <= 1) {
                 type = 'De Burnout Shutdown';
-            } else if (energyLevels.energiereserves < 1.5) {
+            } else if (energyLevels.energiereserves <= 1.5) {
                 type = 'De Rockbottom Burnout';
             }
+        }
+        if (type == '2e Graads Overload Burn out') {
+            if(algemeenGrads == 2 || algemeenGrads == 3)
+            type = `${algemeenGrads}e Graads Overload Burn out`
+            else type = `Geen Burn out`
         }
         return type
     }
