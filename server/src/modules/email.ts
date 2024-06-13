@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const transporter = nodemailer.createTransport({
-    host: 'mail.amantiya.com',
+    host: 'amantiya.com',
     port: 465,
     secure: true,
     auth: {
