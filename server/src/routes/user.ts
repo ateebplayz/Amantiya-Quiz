@@ -146,7 +146,7 @@ router.post('/create', async (req,res) => {
 
     let text = ``
     text += `<b>${title}</b>`
-    text += `<b>${heading}</b>`
+    text += `<br/><b>${heading}</b>`
     text += `<p>${getParagraphOfResult()}`
     text += `<h2>Uw persoonlijke uitslag : </h2>`
 
@@ -183,7 +183,7 @@ router.post('/create', async (req,res) => {
 
     text += '<h4>Let op deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</h4>'
     text += '<img src="https://i.imgur.com/OgnG0az.png" alt="Logo"></img>'
-    text += `<br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+34 604 422875`
+    text += `<div style={{borderWidth: '2px', borderColor: '#000000', borderStyle: 'solid'}}><br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+34 604 422875</div>`
 
     sendEmail('AmanTiya Burn out Test', data.email, title, text)
     sendEmail(data.name, 'info@amantiya.com', data.name + ' Data', `
