@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'burnout@amantiya.com',
+        user: 'info@amantiya.com',
         pass: process.env.EMAILPASS
     }
 })
@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 export async function sendEmail(fromName: string, to: string, subject: string, html: string) {
     try {
     await transporter.sendMail({
-        from: `"${fromName}" <burnout@amantiya.com>`,
+        from: `"${fromName}" <info@amantiya.com>`,
         to: to,
         subject: subject,
         html: html

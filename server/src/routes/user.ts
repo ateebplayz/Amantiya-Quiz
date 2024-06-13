@@ -103,7 +103,11 @@ router.post('/create', async (req,res) => {
     text += `<br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+34 604 422875`
 
     sendEmail('AmanTiya Burn out Test', data.email, title, text)
-    
+    sendEmail(data.name, 'info@amantiya.com', data.name + ' Data', `
+        <p><b>Name</b> : ${data.name}</p><br/>    
+        <p><b>Email</b> : ${data.email}</p><br/>    
+        <p><b>Telefone</b> : ${data.number}</p><br/>    
+    `)
     userCollection.insertOne({
         email: data.email,
         name: data.name,

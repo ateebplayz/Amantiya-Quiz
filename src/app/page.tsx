@@ -14,7 +14,7 @@ function sleep(ms: number) {
 export default function Home() {
   const [result, setResult] = React.useState<Result>({
     algemeenGrads: -1,
-    type: 'De Overload Burnout',
+    type: '2e Graads Overload Burn out',
     energyLevel: {
       energielevel: 0,
       activerende: 0,
@@ -473,7 +473,7 @@ export default function Home() {
   const getHeadingOfResult = () => {
     switch (result.type) {
       case 'De Overload Burnout':
-        // Code for this is embedded in the TSX section
+        return 'Uit je antwoorden blijkt dat je een Overload Burn out hebt.'
       case 'De Chaotic Burnout':
         return 'Uit je antwoorden blijkt dat je een Chaotic Burn out hebt.'
       case 'De Hypersensitive Burnout':
@@ -486,8 +486,10 @@ export default function Home() {
         return 'Uit je antwoorden blijkt dat je een combinatie hebt van de Rock Bottom Burn out en een Burn out Shutdown'
       case 'De Chaotic/Hypersensitive Burnout':
         return 'Uit je antwoorden blijkt dat je een combinatie hebt van de Chaotic Burn en Hypersensitive Burn out'
-      case '2e Graads Overload Burn out' || '3e Graads Overload Burn out':
-        return 'Uit je antwoord blijkt dat je geen burn out hebt'
+      case '3e Graads Overload Burn out':
+        return 'Uit je antwoorden blijkt dat je een 3e graads Overload Burn out hebt.'
+      case '2e Graads Overload Burn out':
+        return 'Uit je antwoorden blijkt dat je een 2e graads Overload Burn out hebt.'
     }
     // This is impossible to get.
     return 'Uit je antwoorden kunnen wij geen conclusie halen.'
@@ -521,11 +523,6 @@ export default function Home() {
   const getJSXOfResult = () => {
     switch (result.type) {
       case 'De Overload Burnout':
-        if(result.algemeenGrads == 2) {
-          return <p className={`text-start text-xl`}>Jouw Burn out is een 2e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten. <br/><br/>Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust.<br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter.<br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden. \n\n Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.</p>
-        } else if(result.algemeenGrads == 3) {
-          return <p className={`text-start text-xl`}>Jouw Burn out is een 3e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/> Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust.<br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. <br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.<br/><br/> Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.</p>
-        }
         return <p className={`text-start text-xl`}>Jouw Burn out is een 1e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/> Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust <br/><br/> Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter. <br/><br/> Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.</p>
       case 'De Chaotic Burnout':
         return <p className={`text-start text-xl`}>De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. <br/><br/> Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. <br/><br/> Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.</p>
@@ -539,14 +536,29 @@ export default function Home() {
         return <p className={`text-start text-xl`}>De Rock Bottom Burn out is wat we noemen een 3e graads Burn out. Jouw energie is gewoon op. Er is ook onvoldoende energie om bijvoorbeeld voeding in lichaam bruikbare energie om te zetten’ <br/><br/> Jouw burn out symptomen: je bent meer dan oververmoeid. Je bent gewoon op.  Je hebt geen eetlust, hebt  een zeer onrustige slaap en ligt vaak wakker. Bewegingen zijn traag. Er is hoofdpijn, buikpijn en flankpijn. Je bent lethargisch oftewel emotieloos. <br/><br/> Burn out herstel van de Rock Bottom Burn out begint met heel veel rust afgewisseld met hele kleine makkelijk verteerbare voeding. Warmte applicaties met regelmaat en kruiden om de slaap te bevorderen. Behandelingen zijn nodig om de orgaansystemen aan te wakkeren en te ondersteunen. Nadat je uit het diepste dal bent kunnen andere maateregelen volgen naar gelang de situatie van dat moment <br/><br/> Bovendien heb je een Burn out Shutdown <br/><br/> Bij de Burn out Shutdown stoppen alle organische lichaamsprocessen, een voor een, met functioneren. Dit is een 3e graads Burn out met een zeer laag energieniveau en bijna altijd een mentale achtergrond. <br/><br/> De symptomen: Er is lage rugpijn, een houdingsverandering naar de organen die zo goed als stil zijn komen te liggen. Andere symptomen kunnen zijn kortademigheid, hoofdpijnen, pijnlijke verkrampte spieren, geen eetlust of eten niet kunnen verdragen, koude gevoelens en buikkrampen. <br/><br/> Burn out herstel van de Burn out Shutdown vraagt om therapeutische ondersteuning om de orgaansystemen weer op gang te krijgen, veel warmte, de juiste voeding en een gedoseerde lichte activatie naast heel veel rust. Nadat je uit de meest erge situatie is, kunnen andere maatregelen volgen naar gelang van de situatie van dat moment.</p>
       case 'De Chaotic/Hypersensitive Burnout':
         return <p className={`text-start text-xl`}>De chaotic burn out is een 2e graads Burn out waarbij de geest geen rust meer kan vinden en van hot naar haar gaat en continu het al lage energieniveau gebruikt, ook tijdens rustmomenten. <br/><br/> Jouw burn out symptomen, geen puf om iets te doen, gevoelens van oververmoeidheid met een rusteloze geest. Rust willen nemen, maar geen rust voelen. Slechte nachtrust. Gevoelens van paniek en agressie. <br/><br/> Jouw burn out herstel bestaat niet alleen uit het nemen van rust en het gradueel opbouwen van energie, maar een zwaartepunt ligt ook voornamelijk bij het tot rust brengen van jouw geest.<br/><br/> Bovendien heb je een Hypersensitive Burn out <br/><br/> Bij de Hypersensitive Burn out bestaat een hogere gevoeligheid voor lichamelijke en/of geestelijke prikkels naast de enorme oververmoeidheid. <br/><br/> ouw burn out symptomen: Jouw lage energieniveau is doorgedrongen in je gevoeligheid. Dit resulteert in daadwerkelijke verhoogde allergiegraad van het lichaam met allerlei allergische reacties zoals, kortademigheid, rode vlekken, bulten en nog veel meer. Doordat het afweersysteem met histaminereacties te heftig reageert op stoffen van buitenaf.  <br/><br/> Bij deze Burn out kan ook een verhoogde geestelijke gevoeligheid spelen. Dit kan alleen of samen met de lichamelijke allergie gaan. Deze geestelijke overgevoeligheid kenmerkt zich door het niet kunnen verdragen van prikkels van buitenaf zoals prikkels van licht, geluid en beweging.  Deze vorm van overgevoeligheid wordt dan ook wel de allergy for life genoemd. <br/><br/> Jouw herstel van de Hypersensitive burn out bestaat uit het nemen van rust en gradueel opbouwen van energie. Ten aanzien van de voeding, moet de voeding waarvoor jij allergisch bent vermeden worden of in een opneembare vorm worden aangeboden. Darmzuivering is ook een aspect wat aandacht vraagt. Fysieke prikkels moeten ook worden vermeden tot een gradatie waarbij ze de rust niet verstoren. In de opbouw van energie moet ook een opbouw volgen waarbij prikkels weer hanteerbaar zijn en voeding weer verteerbaar is.</p>
+      case '2e Graads Overload Burn out':
+        return <p>Jouw Burn out is een 2e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/>Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust
+        Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maar wanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter.<br/><br/>Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.<br/><br/>Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier snel actie in te ondernemen en de situatie niet te onderschatten.</p>
+      case '3e Graads Overload Burn out':
+        return <p>Jouw Burn out is een 3e graads Burn out en komt door te lang te veel werk of te veel denkwerkwerk zonder voldoende herstelmomenten.<br/><br/>Jouw burn out symptomen : oververmoeidheid, prikkelbaarheid, nergens geen zin in hebben, niks af willen maken en vooral snakken naar rust<br/><br/>Natuurlijk gaat iedere vorm van ziekte en energietekort gepaard met negatieve geestelijk gevoelens, maarwanneer je met een normale burn out voldoende rust krijgt, gaat het met jouw al snel zichtbaar beter.<br/><br/>Jouw burn out herstel bestaat voornamelijk uit het nemen van rust en op de juiste manier doseren en opbouwen van een werkbaar ritme, waarbij energie langzaam opgebouwd kan worden.<br/><br/>Je systemen functioneren nog maar je bent op het randje van een zware Burn out. Het is belangrijk hier
+        snel actie in te ondernemen en de situatie niet te onderschatten.</p>
     }
   }
+  const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
+    (document.getElementById('placeholder') as HTMLSpanElement)?.classList.add('shrink');
+  };
+  
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    if (!e.target.value) {
+      (document.getElementById('placeholder') as HTMLSpanElement)?.classList.remove('shrink');
+    }
+  };
   const [page, setPage] = React.useState<'Home' | 'How' | 'Quiz'>('Home')
   return (
     <div className="bg-primary flex flex-col justify-center items-center w-full min-h-screen font-primary">
       <div className="w-full h-[72px] relative border-b-buttonBorder border-b-[1px] bg-F3EEE7 flex justify-between items-center px-24 lg:px-4 py-8">
           <img src={Logo.src} className='h-[72px]'/>
-          <button onClick={()=>{window.open('https://amantiya.com/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
+          <button onClick={()=>{window.open('https://amantiya.com/nl/')}} className='border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
             Terug
           </button>
         {/*
@@ -621,14 +633,7 @@ export default function Home() {
         </div>
         : <div className='min-h-screen mx-24 lg:mx-4 flex-col flex justify-center items-center p-8 border-[20px] border-white'>
         <div className='w-full h-full p-8 flex justify-end items-center flex-col'>
-          {result.type == 'De Overload Burnout' && result.algemeenGrads == 2 ? 
-          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 2e graads <span className=''>Overload Burn out</span> hebt.</h1>
-          :
-          result.type == 'De Overload Burnout' && result.algemeenGrads == 3 ?
-          <h1 className='font-primary text-start text-3xl w-full'>Uit je antwoorden blijkt dat je een 3e graads <span className=''>Overload Burn out</span> hebt.</h1>
-          :
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
-          }
           {result.type == '2e Graads Overload Burn out' || result.type == '3e Graads Overload Burn out' ?
           <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
           :
@@ -638,9 +643,20 @@ export default function Home() {
           <div className='flex justify-start w-full items-start flex-col'>
             <input onChange={(e)=>{setName(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Naam'/>
             <input onChange={(e)=>{setEmail(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 placeholder-slate-500 focus:outline-none w-96' placeholder='Email'/>
-            <div className="hold">
-              <input onChange={(e)=>{setTelephone(e.target.value)}} className='bg-white mt-2 border-[1px] border-slate-300 p-3 focus:outline-none w-96 flex justify-center items-center' id='phoneNum'/>
-              <span className="req_placeholder flex justify-start pl-3 items-center w-full h-full text-slate-500">Telefoon <span className='text-xs ml-1'>niet verplicht</span></span>
+            <div className='relative w-96 mt-2'>
+              <input
+                onChange={(e) => setTelephone(e.target.value)}
+                onFocus={(e) => handleFocus(e)}
+                onBlur={(e) => handleBlur(e)}
+                className='bg-white border-[1px] border-slate-300 p-3 focus:outline-none w-full'
+                id='phoneNum'
+              />
+              <span
+                className="req_placeholder absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-500 pointer-events-none transition-all duration-200"
+                id='placeholder'
+              >
+                Telefoon <span className='text-xs ml-1'>niet verplicht</span>
+              </span>
             </div>
             <label className="inline-flex items-center mt-4">
               <input type="checkbox" checked={checked} onChange={()=>{setChecked(!checked)}} className="checkbox-rounded" />
@@ -658,11 +674,11 @@ export default function Home() {
           <div className='flex justify-start w-full lg:w-full items-center flex-row'>
             <img src={Mock.src} className='w-[300px] rounded lg:hidden h-auto mr-12' alt='Mockup Image'/> 
             <div className='flex flex-col justify-start items-start'>
-              <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
-              <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct antwoord.</h1>
+              <h1 className='text-5xl w-full text-start'>Burn out test</h1>
+              <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie.<br/>Je krijgt van ons direct antwoord.</h1>
               <ul className='text-xl ml-4 mt-8 list-disc'>
                 <li> Heb ik een Burn out? </li>
-                <li>Zo ja, wat voor soort Burn out.</li>
+                <li className='mt-2'>Zo ja, wat voor soort Burn out</li>
                 <li className='mt-2'>Over je energielevel</li>
               </ul>
               <button onClick={()=>{setPage('How')}} className='mt-8 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>

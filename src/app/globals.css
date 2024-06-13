@@ -47,7 +47,9 @@ input[required="required"]:valid + .req_placeholder {
 }
 
 .req_placeholder {
-  position: absolute;
-  top: 2px;
-  left: 2px;
+  transition: all 0.2s;
 }
+.req_placeholder.shrink {
+  opacity: 0
+}
+
