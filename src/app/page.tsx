@@ -29,406 +29,406 @@ export default function Home() {
       question: 'Ik voel me vitaal en sterk:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Mijn energie als ik wakker word heeft niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Na tien minuten wakker te zijn heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in ontbijt en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Om 11.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in lunch en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na de lunch heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Om 16.00 heeft mijn energie niveau:',
       startVal: 'laag',
       endVal: 'hoog',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik heb zin in avondeten en eet met smaak:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Na het avondeten heeft mijn energie niveau:',
       startVal: '',
       endVal: '',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Om 21.00 ben ik niet moe en wil nog niet naar bed:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik slaap goed in:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik slaap rustig en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: "Ik word s'nachts niet wakker:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik word niet snel moe van lichte lichamelijke arbeid zoals, poetsen, tuin werk, knutselen etc:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Ik kan goed een paar uur achter de computer werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Op mijn werk voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Thuis voel ik me energiek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'In de weekenden en op vakantie ben ik uitgerust:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energielevel'
     },
     {
       question: 'Mijn buik voelt altijd lekker en kalm:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,  
+      answer: 0,  
       category: 'Blokkade'
     },
     {
       question: 'Ik heb nooit last van mijn lage rug:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen regelmatige last van hoofdpijn:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een gespannen nek:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van stijfheid in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van pijn in mijn gewrichten:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Mijn borstkas voelt altijd ontspannen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen pijn in pezen of spieren:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van kortademigheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van hartkloppingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van een algeheel gestrest gevoel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Blokkade'
     },
     {
       question: 'Ik heb geen last van spontaan zweet:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: "Ik heb geen last van hete voeten s'nachts of van hogere lichaamswarmte:",
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb het niet eerder koud nu in vergelijking met vroeger:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te hard:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Mijn stoelgang is niet te zacht:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van koude voeten of handen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'In de winter voel ik me niet vaker moe dan in de zomer:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen allergieën:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van mijn maag, buikpijn, misselijkheid of oprispingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik heb geen last van spontane neusbloedingen, anale bloedingen, blauwe plekken of te hevige menstruele bloedingen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
     {
       question: 'Ik ben niet prikkelbaar voor licht, lampen of lichtflitsen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik ben niet prikkelbaar voor geluiden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me goed in een grotere groep mensen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik kan goed tegen rumoer en chaos om me heen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me kalm en verdraagzaam bij mijn familie, kinderen en beste vrienden:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet nerveus:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Hypersensiviteit'
     },
     {
       question: 'Ik voel me niet angstig:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik schrik niet snel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet snel emotioneel:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben niet depressief:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik heb vertrouwen in mijn gezondheid:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Energiereserves'
     },
     {
       question: 'Ik ben gefocust en kan gericht werken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed een boek of stuk tekst lezen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na werk goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan na een emotionele gebeurtenis goed afschakelen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik heb mijn gedachten op een rijtje:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik kan goed rekenen, duidelijk formuleren en mijn talen spreken:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Naveau van focus'
     },
     {
       question: 'Ik pieker niet veel en maak me niet veel zorgen:',
       startVal: 'niet waar',
       endVal: 'volledig waar',
-      answer: 1,
+      answer: 0,
       category: 'Peil activerende energie'
     },
   ])
@@ -460,7 +460,7 @@ export default function Home() {
         energiereserves: `${result.energyLevel.energiereserves}`
       }
     }
-    await axios.post('https://api.amantiya.com:8080/users/create', postData, {
+    await axios.post('http://localhost:8080/users/create', postData, {
       headers: {
         'Content-Type': 'application/json'
       }
@@ -490,6 +490,8 @@ export default function Home() {
         return 'Uit je antwoorden blijkt dat je een 3e graads Overload Burn out hebt.'
       case '2e Graads Overload Burn out':
         return 'Uit je antwoorden blijkt dat je een 2e graads Overload Burn out hebt.'
+      case 'Geen Burn out':
+        return 'Uit je antwoorden blijkt dat je een Geen Burn out hebt.'
     }
     // This is impossible to get.
     return 'Uit je antwoorden kunnen wij geen conclusie halen.'
@@ -634,7 +636,7 @@ export default function Home() {
         : <div className='min-h-screen mx-24 lg:mx-4 flex-col flex justify-center items-center p-8 border-[20px] border-white'>
         <div className='w-full h-full p-8 flex justify-end items-center flex-col'>
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
-          {result.type == '2e Graads Overload Burn out' || result.type == '3e Graads Overload Burn out' ?
+          {result.type == 'Geen Burn out' ?
           <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
           :
           getJSXOfResult()
