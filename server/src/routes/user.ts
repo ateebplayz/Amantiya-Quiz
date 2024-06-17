@@ -142,13 +142,13 @@ router.post('/create', async (req,res) => {
         }
       }
     let heading = getHeadingOfResult()
-    const title = `Beste ${data.name} Onderstaand het volledige resultaat van uw test.`
+    const title = `Beste ${data.name} onderstaand het volledige resultaat van uw test.`
 
     let text = ``
-    text += `<b>${title}</b>`
-    text += `<br/><b>${heading}</b>`
+    text += `<div style="background-color: #fdfaf6;">${title}`
+    text += `<br/><h3><b>${heading}</b></h3>`
     text += `<p>${getParagraphOfResult()}`
-    text += `<h2>Uw persoonlijke uitslag : </h2>`
+    text += `<h3>Uw persoonlijke uitslag : </h3>`
 
     text += `<br/><b>Energie Level: </b><br/>`
 
@@ -168,25 +168,28 @@ router.post('/create', async (req,res) => {
     
     text += '<br/><br/><b>Blokerings niveau: </b><br/>'
     if(Number(data.energyLevel.blokkade) <= 2.5 && Number(data.energyLevel.blokkade) >= 1.7) text += 'Je bent iemand die snel alles wat om je heen gebeurt in je opneemt. Daarmee blokkeer je op lichamelijke en geestelijke stressmomenten.'
-    if(Number(data.energyLevel.blokkade) <= 1.6 && Number(data.energyLevel.blokkade) >= 1.1) text += 'De manier waarop je met dingen omgaat zorgt ervoor dat lichamelijk en emotioneel blokkeert. Ook al voel je dat niet altijd, sla je de dingen die om je heen gebeuren op en loop je daarop vast; Op je spieren, je bindweefsel, je organen en/of je bloedvoorziening.'
-    if(Number(data.energyLevel.blokkade) <= 1.0) text += 'De stress in je leven, de manier van omgaan en je ritme zorgen ervoor dat je veel te veel blokkeert in je lijf. Processen in de spieren, in de zuivering van je lichaam, in je organen en in je bloedsomloop verlopen niet zoals het hoort.'
+    else if(Number(data.energyLevel.blokkade) <= 1.6 && Number(data.energyLevel.blokkade) >= 1.1) text += 'De manier waarop je met dingen omgaat zorgt ervoor dat lichamelijk en emotioneel blokkeert. Ook al voel je dat niet altijd, sla je de dingen die om je heen gebeuren op en loop je daarop vast; Op je spieren, je bindweefsel, je organen en/of je bloedvoorziening.'
+    else if(Number(data.energyLevel.blokkade) <= 1.0) text += 'De stress in je leven, de manier van omgaan en je ritme zorgen ervoor dat je veel te veel blokkeert in je lijf. Processen in de spieren, in de zuivering van je lichaam, in je organen en in je bloedsomloop verlopen niet zoals het hoort.'
+    else text += 'Je Blokkerings niveau is in orde.'
     
     text += '<br/><br/><b>Hypersensiviteit niveau: </b><br/>'
     if(Number(data.energyLevel.hyper) <= 2.2 && Number(data.energyLevel.hyper) >= 1.6) text += 'Je gevoeligheid is hoger dan bij de gemiddelde mens. Je reageert daarom meer op de prikkels om je heen. Dit kost je energie. Je kunt deze verloren energie wel een rustige omgeving terugkrijgen.'
-    if(Number(data.energyLevel.hyper) <= 1.5 && Number(data.energyLevel.hyper) >= 1.1) text += 'Je bent eigenlijk constant overprikkeld. Dit gaat ten koste van je energieopbouw en je energiezuivering. De overprikkeling wegnemen lukt je niet in de maatschappij waarin je leeft. Beter is het om je energielevel en daarmee je tolerantie te verhogen.'
-    if(Number(data.energyLevel.hyper) <= 1.0) text += 'Je overprikkeling is op het hoogste niveau. Je energielevel en de mate van de overprikkeling houden elkaar in een zeer negatieve stand. Je gaat je terugtrekken en afzonderen waardoor de situatie alleen verslechtert. Je energie laat het echter niet toe om de ommekeer te maken. Dit moet vanuit het totale energielevel aangepakt worden.'
+    else if(Number(data.energyLevel.hyper) <= 1.5 && Number(data.energyLevel.hyper) >= 1.1) text += 'Je bent eigenlijk constant overprikkeld. Dit gaat ten koste van je energieopbouw en je energiezuivering. De overprikkeling wegnemen lukt je niet in de maatschappij waarin je leeft. Beter is het om je energielevel en daarmee je tolerantie te verhogen.'
+    else if(Number(data.energyLevel.hyper) <= 1.0) text += 'Je overprikkeling is op het hoogste niveau. Je energielevel en de mate van de overprikkeling houden elkaar in een zeer negatieve stand. Je gaat je terugtrekken en afzonderen waardoor de situatie alleen verslechtert. Je energie laat het echter niet toe om de ommekeer te maken. Dit moet vanuit het totale energielevel aangepakt worden.'
+    else text += 'Je Hypersensinsiviteit niveau is in orde.'
 
     text += '<br/><br/><b>Focus niveau: </b><br/>'
     if(Number(data.energyLevel.focus) <= 2.4 && Number(data.energyLevel.focus) >= 1.6) text += 'Jezelf organiseren en je ergens op focussen is minder dan normaal. Dit hoeft nog geen problemen op te leveren, maar het is wel een aandachtspunt wat je zou kunnen aanpakken en trainen zodat er geen energie meer hierdoor verloren gaat.'
-    if(Number(data.energyLevel.focus) <= 1.5 && Number(data.energyLevel.focus) >= 1.1) text += 'Je algehele niveau van focus is beneden peil. Er zijn zeker zaken in je leven die dit negatief beïnvloeden. Het schaadt je energie. Je levensritme, rust en energieniveau moeten verbeteren om dit aan te pakken.'
-    if(Number(data.energyLevel.focus) <= 1.0) text += 'Je gebrek aan focus beïnvloedt het level van je energie en vice versa. De chaos in je hoofd en in je leven zorgen voor verder energieverlies. Alleen leren focussen of je geest tot rust brengen is niet genoeg. Er zullen zowel op lichamelijk, energetisch als geestelijk gebied verbeteringen ingezet moeten worden.'
+    else if(Number(data.energyLevel.focus) <= 1.5 && Number(data.energyLevel.focus) >= 1.1) text += 'Je algehele niveau van focus is beneden peil. Er zijn zeker zaken in je leven die dit negatief beïnvloeden. Het schaadt je energie. Je levensritme, rust en energieniveau moeten verbeteren om dit aan te pakken.'
+    else if(Number(data.energyLevel.focus) <= 1.0) text += 'Je gebrek aan focus beïnvloedt het level van je energie en vice versa. De chaos in je hoofd en in je leven zorgen voor verder energieverlies. Alleen leren focussen of je geest tot rust brengen is niet genoeg. Er zullen zowel op lichamelijk, energetisch als geestelijk gebied verbeteringen ingezet moeten worden.'
+    else text += 'Je Focus niveau is in orde.'
 
     text += '<h4>Let op deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</h4>'
-    text += '<img src="https://i.imgur.com/OgnG0az.png" alt="Logo"></img>'
+    text += '<img src="https://i.imgur.com/jx2DOZ6.png" alt="Logo"></img>'
     text += `<div style={{borderWidth: '2px', borderColor: '#000000', borderStyle: 'solid'}}><br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+31(0)30 781 0027</div>`
-
-    sendEmail('AmanTiya Burn out test', data.email, title, text)
-    sendEmail(data.name, 'info@amantiya.com', data.name + ' Data', `
+    text += '</div>'
+    sendEmail('AmanTiya Burn out test', data.email, 'Persoonlijk resultaat van uw burn out test', text)
+    sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
         <p><b>Name</b> : ${data.name}</p><br/>    
         <p><b>Email</b> : ${data.email}</p><br/>    
         <p><b>Telefone</b> : ${data.number}</p><br/>    
