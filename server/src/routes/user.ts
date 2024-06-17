@@ -192,7 +192,13 @@ router.post('/create', async (req,res) => {
     sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
         <p><b>Name</b> : ${data.name}</p><br/>    
         <p><b>Email</b> : ${data.email}</p><br/>    
-        <p><b>Telefone</b> : ${data.number}</p><br/>    
+        <p><b>Telefone</b> : ${data.number}</p><br/>  
+        <p><b>Energielevel</b> : ${data.energyLevel.energielevel}</p><br/>  
+        <p><b>Activerende</b> : ${data.energyLevel.activerende}</p><br/>  
+        <p><b>Blokkade</b> : ${data.energyLevel.blokkade}</p><br/>  
+        <p><b>Energiereserves</b> : ${data.energyLevel.energiereserves}</p><br/>    
+        <p><b>Focus</b> : ${data.energyLevel.focus}</p><br/>    
+        <p><b>Hyper</b> : ${data.energyLevel.hyper}</p><br/>    
     `)
     userCollection.insertOne({
         email: data.email,
