@@ -13,16 +13,15 @@ app.use(express.json())
 
 app.use('/users', UserRoute)
 app.use('/admin', AdminRoute)
-/*
 
 const options = {
   key: fs.readFileSync('SSL/private.key'),
   cert: fs.readFileSync('SSL/certificate.crt')
 }
 
-const server = https.createServer(options, app)*/
+const server = https.createServer(options, app)
 
-app.listen(8080, ()=>{
+server.listen(8080, ()=>{
     console.log('App listening on Port 8080')
 })
 
