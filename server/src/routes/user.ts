@@ -35,7 +35,8 @@ router.post('/create', async (req,res) => {
         focus: string,
         hyper: string,
         energiereserves: string
-    }}
+    }, checked: 'y' | 'n'}
+    if(data.checked !== 'y' && data.checked !== 'n') return res.json({data: 'Checked must be either y or n'})
     if(!data.name) {
         return res.json({data: 'No Name Provided', code: 400})
     }
@@ -146,9 +147,9 @@ router.post('/create', async (req,res) => {
 
     let text = ``
     text += `<div style="background-color: #fdfaf6;">${title}`
-    text += `<br/><h3><b>${heading}</b></h3>`
+    text += `<br/><p><b>${heading}</b></p>`
     text += `<p>${getParagraphOfResult()}`
-    text += `<h3>Uw persoonlijke uitslag : </h3>`
+    text += `<p>Uw persoonlijke uitslag : </p>`
 
     text += `<br/><b>Energie Level: </b><br/>`
 
@@ -161,10 +162,12 @@ router.post('/create', async (req,res) => {
     text += '<br/><br/><b>Activerende Energie: </b><br/>'
     if(Number(data.energyLevel.activerende) <= 2.2 && Number(data.energyLevel.activerende) >= 1.6) text += 'Er is een duidelijk tekort aan de energie die voor je activerende functies zorgt. Dit is de energie waarmee je iets doet, een karwei, maar ook intern voedsel omzetten, bloedsomloop en de opruiming van afvalstoffen. Het is echter nog niet zodanig dat dit een peil bereikt dat dit op de rest van je systeem een verder afbrekend effect heeft. Het herstellen van je activerende energie is wel een serieus aandachtspunt.'
     if(Number(data.energyLevel.activerende) <= 1.5) text += 'Het niveau van je activerende energie is veel te laag. Dit is de energie waarmee je iets doet, een karwei, maar ook intern voedsel omzetten, transport en schoonmaak. Dit zorgt ervoor dat je totale energie zich onvoldoende kan opbouwen, herstellen en verschonen. Het houdt het algehele niveau van je energie in een vicieuze cirkel of brengt het zelfs in een neerwaartse spiraal.'
+    else text += 'Het niveau van je activerende energie is voldoende.'
 
     text += '<br/><br/><b>Energiereserve: </b><br/>'
     if(Number(data.energyLevel.energiereserves) <= 2.5 && Number(data.energyLevel.energiereserves) >= 1.6) text += 'Je symptomen laten zien dat je je lichaamsreserves aan het verbruiken bent zonder ze voldoende op te bouwen. Dit zijn de reserves aan bouwstoffen, afweerstoffen, transportmiddelen en energieopslag. Je kunt nog wel een bepaalde balans hierin behouden, maar wanneer je energie verder af zal nemen, zullen ook je reserves verdwijnen en zal er op dit gebied een vicieuze cirkel of zelfs negatieve spiraal ontstaan.'
     if(Number(data.energyLevel.energiereserves) <= 1.5) text += 'Je lichaamsreserves zijn zover verminderd dat ze de normale circulatie van je energie verstoren. Dit zijn de reserves aan bouwstoffen, afweerstoffen, transportmiddelen en energieopslag. Door te weinig lichamelijke reserves, brand je op van binnen en komen je organen en/of je geest te weinig tot rust. Hierdoor worden de reserves niet aangevuld en een negatieve spiraal ontstaat. Deze zal snel omgekeerd moet worden zodat je systeem niet verder achteruitgaat met als eindresultaat een complete ineenstorting.'
+    else text += 'Het niveau van je energie reserve is voldoende'
     
     text += '<br/><br/><b>Blokerings niveau: </b><br/>'
     if(Number(data.energyLevel.blokkade) <= 2.5 && Number(data.energyLevel.blokkade) >= 1.7) text += 'Je bent iemand die snel alles wat om je heen gebeurt in je opneemt. Daarmee blokkeer je op lichamelijke en geestelijke stressmomenten.'
@@ -189,7 +192,7 @@ router.post('/create', async (req,res) => {
     text += `<div style={{borderWidth: '2px', borderColor: '#000000', borderStyle: 'solid'}}><br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+31(0)30 781 0027</div>`
     text += '</div>'
     sendEmail('AmanTiya Burn out test', data.email, 'Persoonlijk resultaat van uw burn out test', text)
-    sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
+    if(data.checked == 'y') sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
         <p><b>Name</b> : ${data.name}</p><br/>    
         <p><b>Email</b> : ${data.email}</p><br/>    
         <p><b>Telefone</b> : ${data.number}</p><br/>  

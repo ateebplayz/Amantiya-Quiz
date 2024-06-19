@@ -458,7 +458,8 @@ export default function Home() {
         focus: `${result.energyLevel.focus}`,
         hyper: `${result.energyLevel.hyper}`,
         energiereserves: `${result.energyLevel.energiereserves}`
-      }
+      },
+      intake: checked ? 'y' : 'n'
     }
     await axios.post('http://localhost:8080/users/create', postData, {
       headers: {
@@ -491,7 +492,7 @@ export default function Home() {
       case '2e Graads Overload Burn out':
         return 'Uit je antwoorden blijkt dat je een 2e graads Overload Burn out hebt.'
       case 'Geen Burn out':
-        return 'Uit je antwoorden blijkt dat je een Geen Burn out hebt.'
+        return 'Uit je antwoorden blijkt dat je Geen Burn out hebt.'
     }
     // This is impossible to get.
     return 'Uit je antwoorden kunnen wij geen conclusie halen.'
