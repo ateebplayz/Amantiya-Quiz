@@ -461,7 +461,7 @@ export default function Home() {
       },
       intake: checked ? 'y' : 'n'
     }
-    await axios.post('http://localhost:8080/users/create', postData, {
+    await axios.post('https://api.amantiya.com:8080/users/create', postData, {
       headers: {
         'Content-Type': 'application/json'
       }

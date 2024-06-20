@@ -35,8 +35,8 @@ router.post('/create', async (req,res) => {
         focus: string,
         hyper: string,
         energiereserves: string
-    }, checked: 'y' | 'n'}
-    if(data.checked !== 'y' && data.checked !== 'n') return res.json({data: 'Checked must be either y or n'})
+    }, intake: 'y' | 'n'}
+    if(data.intake !== 'y' && data.intake !== 'n') return res.json({data: 'intake must be either y or n'})
     if(!data.name) {
         return res.json({data: 'No Name Provided', code: 400})
     }
@@ -192,7 +192,7 @@ router.post('/create', async (req,res) => {
     text += `<div style={{borderWidth: '2px', borderColor: '#000000', borderStyle: 'solid'}}><br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+31(0)30 781 0027</div>`
     text += '</div>'
     sendEmail('AmanTiya Burn out test', data.email, 'Persoonlijk resultaat van uw burn out test', text)
-    if(data.checked == 'y') sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
+    if(data.intake == 'y') sendEmail(data.name, 'info@amantiya.com', 'burn out test intake', `
         <p><b>Name</b> : ${data.name}</p><br/>    
         <p><b>Email</b> : ${data.email}</p><br/>    
         <p><b>Telefone</b> : ${data.number}</p><br/>  
