@@ -638,7 +638,7 @@ export default function Home() {
         <div className='w-full h-full p-8 flex justify-end items-center flex-col'>
           <h1 className='font-primary text-start text-3xl w-full'>{getHeadingOfResult()}</h1>
           {result.type == 'Geen Burn out' ?
-          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je geen {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
+          <p className={`text-start text-xl`}>Je totale energiebeeld geeft aan dat je {result.type}. Je energie is hoog genoeg om zelf te herstellen van eventuele klachten die je zou kunnen hebben. Zorg voor een gezond levensritme, met voldoende rust, beweging en gezond eten. Zoek je een methode om jezelf te ontwikkelen, je levensritme en je energie te leren kennen en onder controle leren brengen. We bieden een online begeleiding en training van je eigen energie via de cursus “De Yuan methode – Eén met je eigen energie”.<span className='font-bold' onClick={()=>{window.open('http://amantiya.com/wp-content/uploads/2024/06/Cursus-leren-werken-met-Energie.pdf')}}>Klik hier</span> voor meer info.</p>
           :
           getJSXOfResult()
           }
