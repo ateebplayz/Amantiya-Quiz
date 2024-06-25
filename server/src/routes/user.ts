@@ -70,6 +70,7 @@ router.post('/create', async (req,res) => {
     if (Number(data.energyLevel.energielevel) <= 2.8 && Number(data.energyLevel.energielevel) >= 2.2) {
         result.algemeenGrads = 1;
         result.type = 'De Overload Burnout';
+        console.log(result.type)
     } else if (Number(data.energyLevel.energielevel) <= 2.2 && Number(data.energyLevel.energielevel) >= 1.6) {
         result.algemeenGrads = 2;
         // Specific checks for 2e graads types
@@ -96,6 +97,7 @@ router.post('/create', async (req,res) => {
         result.type = `${result.algemeenGrads}e Graads Overload Burn out`
         else result.type = `Geen Burn out`
     }
+    console.log(result.type)
     const getHeadingOfResult = () => {
         switch (result.type) {
           case 'De Overload Burnout':
@@ -150,9 +152,11 @@ router.post('/create', async (req,res) => {
 
     let text = ``
     text += `<div style="background-color: #fdfaf6;">${title}`
-    text += `<br/><p style="margin-bottom: 5px"><b>${heading}</b></p>`
-    text += `<p>${getParagraphOfResult()}`
-    text += `<p><b>Uw persoonlijke uitslag : </b></p>`
+    if(result.type !== 'Geen Burn out') {
+      text += `<br/><p style="margin-bottom: 5px; font-size: 13px"><b>${heading}</b></p>`
+      text += `<p style="font-size: 12px">${getParagraphOfResult()}`
+    }
+    text += `<p style="font-size: 13px"><b>Uw persoonlijke uitslag : </b></p>`
 
     text += `<br/><b>Energie Level: </b><br/>`
 
@@ -190,7 +194,7 @@ router.post('/create', async (req,res) => {
     else if(Number(data.energyLevel.focus) <= 1.0) text += 'Je gebrek aan focus beïnvloedt het level van je energie en vice versa. De chaos in je hoofd en in je leven zorgen voor verder energieverlies. Alleen leren focussen of je geest tot rust brengen is niet genoeg. Er zullen zowel op lichamelijk, energetisch als geestelijk gebied verbeteringen ingezet moeten worden.'
     else text += 'Je Focus niveau is in orde.'
 
-    text += '<h4>Let op deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</h4>'
+    text += '<p style="font-size: 13px">Let op deze uitslag geeft onze eerste bevinding. Wil je een meer diepgaande en uitgebreidere diagnose.  Vul dan je gegevens in en plan een gratis intake.</p>'
     text += '<img src="https://i.imgur.com/jx2DOZ6.png" alt="Logo"></img>'
     text += `<div style={{borderWidth: '2px', borderColor: '#000000', borderStyle: 'solid'}}><br/><b>Met vriendelijke Groet</b>,<br/>Stanley van Lamoen<br/>www.amantiya.com<br/>+31(0)30 781 0027</div>`
     text += '</div>'
@@ -278,3 +282,5 @@ router.get('/delete', async (req,res) => {
     }, code: 200})
 })
 export default router
+
+617
