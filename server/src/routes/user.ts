@@ -154,7 +154,7 @@ router.post('/create', async (req,res) => {
     text += `<div style="background-color: #fdfaf6;">${title}`
     if(result.type !== 'Geen Burn out') {
       text += `<br/><p style="margin-bottom: 5px; font-size: 13px"><b>${heading}</b></p>`
-      text += `<p style="font-size: 12px">${getParagraphOfResult()}`
+      text += `${getParagraphOfResult()}`
     }
     text += `<p style="font-size: 13px"><b>Uw persoonlijke uitslag : </b></p>`
 

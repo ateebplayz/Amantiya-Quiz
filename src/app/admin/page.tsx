@@ -105,6 +105,10 @@ function AdminPage() {
                 <h1 className='text-7xl font-bold'>{average.energiereserves}</h1>
                 <h1 className='text-xl mt-2'>Energiereserves</h1>
             </div>
+            <div className='transition duration-500 hover:scale-105 cursor-pointer w-44 mx-2 h-44 shadow-xl bg-button mt-12 rounded-xl flex flex-col justify-center items-center'>
+                <h1 className='text-7xl font-bold'>{documents.length}</h1>
+                <h1 className='text-xl mt-2'>Responses</h1>
+            </div>
         </div>
         <div className='flex justify-center items-center flex-col p-6 w-full'>
             {documents.map((d, i) => (
